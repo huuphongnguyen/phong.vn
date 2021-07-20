@@ -1,3 +1,4 @@
+import { IconBoxModel } from "@tabler/icons";
 import { Coin, Envelope, FaceHappy, File, Leaf } from "akar-icons";
 import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
@@ -93,7 +94,6 @@ export default function SubPageSection() {
               <p className="text-gray-500 dark:text-gray-400">hmmmm!!!!</p>
             </div>
           </div>
-
           <div className="flex items-center space-x-3">
             <div className="pr-1">
               <Coin className="text-black dark:text-white" />
@@ -121,6 +121,25 @@ export default function SubPageSection() {
               </NextLink>
               <p className="text-gray-500 dark:text-gray-400">
                 {t("subpage-letters-description")}
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="pr-1">
+              <IconBoxModel
+                className="text-black dark:text-white"
+                size={27}
+                stroke={1.7}
+              />
+            </div>
+            <div className="flex-cols md:flex items-center space-x-0 md:space-x-2">
+              <a href="https://phong.bio.link" target="_blank">
+                <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
+                  phong.bio.link
+                </h2>
+              </a>
+              <p className="text-gray-500 dark:text-gray-400">
+                Verified by BIO.LINK
               </p>
             </div>
           </div>
