@@ -1,6 +1,15 @@
 const nextTranslate = require("next-translate");
 
 module.exports = nextTranslate({
+  async redirects() {
+    return [
+      {
+        source: "/bio",
+        destination: "https://phong.bio.link",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     domains: [
       "images.unsplash.com",
