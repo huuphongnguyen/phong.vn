@@ -5,7 +5,7 @@ export default function ContactButton() {
     <div>
       <NextLink href="/phong">
         <a
-          className="rainbow_contact_button font-carbonbold"
+          className="rainbow_contact_button font-sourcecodepro text-sm"
           alt="Contact me"
         />
       </NextLink>

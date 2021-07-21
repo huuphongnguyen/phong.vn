@@ -58,13 +58,13 @@ export default function MEMESound({ results }) {
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-base uppercase font-sourcecodepro">
               <p>/</p>
               <p>Inspiration</p>
             </div>
           </a>
         </NextLink>
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro">
           <p>/</p>
           <h1>MEME's sound board</h1>
         </div>

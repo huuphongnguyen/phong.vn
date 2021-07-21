@@ -42,7 +42,7 @@ export default function QuotesView({ resultssync }) {
                   />
                 </div>
               </a>
-              <p className="text-black dark:text-white font-carbonbold uppercase text-lg">
+              <p className="text-black dark:text-white font-sourcecodepro uppercase text-sm">
                 {block.properties.whosaid.title[0].plain_text}
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function QuotesView({ resultssync }) {
             size={22}
           />
           <p
-            className={`text-black dark:text-white text-sm font-carbonbold uppercase pointer-events-none select-none ${
+            className={`text-black dark:text-white text-sm font-sourcecodepro uppercase pointer-events-none select-none ${
               isDisabled ? "text-gray-400" : "text-black"
             }`}
           >
@@ -101,7 +101,7 @@ export default function QuotesView({ resultssync }) {
           onClick={TranslateQuote}
         >
           {isTranslated ? <CheckBox size={22} /> : <Box size={22} />}
-          <p className="font-carbonbold uppercase text-sm pointer-events-none select-none">
+          <p className="font-sourcecodepro uppercase text-sm pointer-events-none select-none">
             Vietnamese
           </p>
         </div>

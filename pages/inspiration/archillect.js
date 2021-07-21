@@ -63,13 +63,13 @@ export default function Archillect({ data }) {
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white uppercase font-sourcecodepro text-base">
               <p>/</p>
               <p>Inspiration</p>
             </div>
           </a>
         </NextLink>
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro">
           <p>/</p>
           <h1>Archillect</h1>
         </div>
@@ -84,7 +84,7 @@ export default function Archillect({ data }) {
           <p className="text-black dark:text-white text-sm">
             {t("archillect-p3")}
           </p>
-          <div className="text-red-500 text-xl font-carbonbold flex items-center space-x-2">
+          <div className="text-red-500 text-base font-sourcecodepro flex items-center space-x-2">
             <p>BLOCKS: </p>
             <p>
               {data[0].id} - {data[49].id}
@@ -96,7 +96,7 @@ export default function Archillect({ data }) {
             <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbonbold text-lg font-bold uppercase"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-sourcecodepro text-base font-bold uppercase"
                 onClick={() => {
                   showArchillectImageGrid(true);
                 }}
@@ -106,7 +106,7 @@ export default function Archillect({ data }) {
 
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbonbold text-lg font-bold uppercase"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-sourcecodepro text-base font-bold uppercase"
                 onClick={() => {
                   showArchillectImageGrid(false);
                 }}

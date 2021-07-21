@@ -23,10 +23,10 @@ export default function ProjectsElements({
         ))}
       </div>
       <div className="p-2 border-t-2 border-black dark:border-white">
-        <h2 className="text-black dark:text-white font-carbonbold uppercase text-xl">
+        <h2 className="text-black dark:text-white font-sourcecodepro uppercase text-base font-bold">
           {nameproject}
         </h2>
-        <p className="text-gray-400 dark:text-gray-500 font-carbonbold uppercase">
+        <p className="text-gray-400 dark:text-gray-500 font-sourcecodepro text-base uppercase">
           Established in {est}
         </p>
       </div>
@@ -38,9 +38,9 @@ export default function ProjectsElements({
               <ArrowUpRight className="text-white dark:text-black" size={16} />
             </a>
           </NextLink>
-          <div className="text-black dark:text-white font-carbonbold uppercase p-2">
-            <p>From start-up day:</p>
-            <p className="text-2xl">
+          <div className="text-black dark:text-white font-sourcecodepro uppercase p-2">
+            <p className="text-sm">From start-up day:</p>
+            <p className="text-xl">
               {moment(startupday, "YYYYMMDD").fromNow()}
             </p>
           </div>

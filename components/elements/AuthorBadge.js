@@ -6,7 +6,7 @@ export default function AuthorBadge() {
       </div>
       <div className="-space-y-1">
         <p className="text-black dark:text-white font-bold">Nguyễn Hữu Phong</p>
-        <p className="text-gray-500 dark:text-gray-400 font-bold font-carbonbold text-xl uppercase">
+        <p className="text-gray-500 dark:text-gray-400 font-bold font-sourcecodepro text-base uppercase">
           @isnhp
         </p>
       </div>

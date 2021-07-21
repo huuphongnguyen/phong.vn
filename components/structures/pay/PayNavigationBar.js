@@ -17,7 +17,7 @@ export default function PayNavigationBar() {
             <div className="flex items-center justify-center">
               <Money className="w-7 h-7 text-black dark:text-white" size={23} />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold text-center uppercase text-sm">
+            <h2 className="text-black dark:text-white font-sourcecodepro text-center uppercase text-sm">
               Banks
             </h2>
           </div>
@@ -36,7 +36,7 @@ export default function PayNavigationBar() {
                 size={23}
               />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold text-center uppercase text-sm">
+            <h2 className="text-black dark:text-white font-sourcecodepro text-center uppercase text-sm">
               E-Wall
             </h2>
           </div>
@@ -52,7 +52,7 @@ export default function PayNavigationBar() {
             <div className="flex items-center justify-center">
               <Coin className="w-7 h-7 text-black dark:text-white" size={23} />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold text-center uppercase text-sm">
+            <h2 className="text-black dark:text-white font-sourcecodepro text-center uppercase text-sm">
               Coins
             </h2>
           </div>
@@ -71,7 +71,7 @@ export default function PayNavigationBar() {
                 size={23}
               />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold text-center uppercase text-sm">
+            <h2 className="text-black dark:text-white font-sourcecodepro text-center uppercase text-sm">
               Others
             </h2>
           </div>

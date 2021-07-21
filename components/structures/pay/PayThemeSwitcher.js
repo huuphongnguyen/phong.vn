@@ -20,14 +20,14 @@ export default function PayThemeSwitcher() {
           {theme === "dark" ? (
             <div className="w-full h-full flex items-center justify-center ">
               <Sun className="text-black dark:text-white" size={22} />
-              <p className="text-black dark:text-white font-carbonbold uppercase text-lg">
+              <p className="text-black dark:text-white font-sourcecodepro uppercase text-sm">
                 Light
               </p>
             </div>
           ) : (
             <div className="w-full h-full flex items-center justify-center space-x-1">
               <Moon className="text-black dark:text-white" size={22} />
-              <p className="text-black dark:text-white font-carbonbold uppercase text-lg">
+              <p className="text-black dark:text-white font-sourcecodepro uppercase text-sm">
                 Dark
               </p>
             </div>

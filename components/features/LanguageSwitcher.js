@@ -15,7 +15,7 @@ export default function LanguageSwitcher() {
                 : "bg-transparent border-2 border-gray-200 dark:border-gray-600"
             }`}
           >
-            <p className="text-black dark:text-white font-carbonbold uppercase rainbow_text_hover">
+            <p className="text-black dark:text-white font-sourcecodepro text-sm uppercase rainbow_text_hover">
               vi
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function LanguageSwitcher() {
                 : "bg-transparent border-2 border-gray-200 dark:border-gray-600"
             }`}
           >
-            <p className="text-black dark:text-white font-carbonbold uppercase rainbow_text_hover">
+            <p className="text-black dark:text-white font-sourcecodepro text-sm uppercase rainbow_text_hover">
               en
             </p>
           </div>

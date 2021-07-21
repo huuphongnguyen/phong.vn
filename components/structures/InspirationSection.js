@@ -7,10 +7,10 @@ export default function InspirationSection() {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white text-xl uppercase font-carbonbold">
+        <p className="text-black dark:text-white text-base uppercase font-sourcecodepro">
           /
         </p>
-        <h1 className="text-black dark:text-white text-xl uppercase font-carbonbold">
+        <h1 className="text-black dark:text-white text-base uppercase font-sourcecodepro">
           Inspiration
         </h1>
       </div>

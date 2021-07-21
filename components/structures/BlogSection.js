@@ -10,10 +10,10 @@ export default function BlogSection() {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white uppercase font-carbonbold text-xl">
+        <p className="text-black dark:text-white uppercase font-sourcecodepro text-base">
           /
         </p>
-        <h1 className="text-black dark:text-white uppercase font-carbonbold text-xl">
+        <h1 className="text-black dark:text-white uppercase font-sourcecodepro text-base">
           Blog
         </h1>
       </div>
@@ -28,7 +28,7 @@ export default function BlogSection() {
               </div>
               <div className="flex-cols items-center">
                 <div className="flex items-center space-x-2">
-                  <p className="text-gray-500 dark:text-gray-400 font-bold font-carbonbold inline-flex">
+                  <p className="text-gray-500 dark:text-gray-400 font-bold font-sourcecodepro text-sm inline-flex">
                     {blog[4]}
                   </p>
                   {blog[2].map((tag, index) =>

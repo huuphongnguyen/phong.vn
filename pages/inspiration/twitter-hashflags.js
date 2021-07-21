@@ -48,13 +48,13 @@ export default function TwitterHashflags() {
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-base uppercase font-sourcecodepro">
               <p>/</p>
               <p>Inspiration</p>
             </div>
           </a>
         </NextLink>
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro">
           <p>/</p>
           <h1>Twitter Hashflags</h1>
         </div>
@@ -77,7 +77,7 @@ export default function TwitterHashflags() {
             <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbonbold text-lg font-bold uppercase"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-sourcecodepro text-base font-bold uppercase"
                 onClick={() => {
                   ShowTwitterHashflagsGrid(true);
                 }}
@@ -89,7 +89,7 @@ export default function TwitterHashflags() {
 
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbonbold text-lg font-bold uppercase"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-sourcecodepro text-base font-bold uppercase"
                 onClick={() => {
                   ShowTwitterHashflagsGrid(false);
                 }}

@@ -70,7 +70,7 @@ export default function SoundFromUniverse() {
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
         <div className="space-y-2 border_dash_animated dark:border_dash_animated_dark">
           <div>
-            <h1 className="text-2xl font-bold uppercase font-carbonbold text-black dark:text-white">
+            <h1 className="text-xl font-bold uppercase font-sourcecodepro text-black dark:text-white">
               'Sound from Universe'
             </h1>
             <p className="text-sm text-black dark:text-white">

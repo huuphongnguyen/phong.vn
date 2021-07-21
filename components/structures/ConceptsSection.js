@@ -13,10 +13,10 @@ export default function ConceptsSection() {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white uppercase font-carbonbold text-xl">
+        <p className="text-black dark:text-white uppercase font-sourcecodepro text-base">
           /
         </p>
-        <h1 className="text-black dark:text-white uppercase font-carbonbold text-xl">
+        <h1 className="text-black dark:text-white uppercase font-sourcecodepro text-base">
           Concepts
         </h1>
       </div>
@@ -27,7 +27,7 @@ export default function ConceptsSection() {
               <Planet className="text-black dark:text-white animate-spin-slow-42" />
             </div>
             <div className="flex items-center space-x-2" key={index}>
-              <p className="text-gray-500 dark:text-gray-400 font-bold font-carbonbold inline-flex">
+              <p className="text-gray-500 dark:text-gray-400 font-bold font-sourcecodepro text-sm inline-flex">
                 {b[2]}
               </p>
               <NextLink href={b[1]}>

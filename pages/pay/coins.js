@@ -46,7 +46,7 @@ export default function Coins() {
               className="text-black font-bold text-2xl text-center rainbow_text_foundation p-4 cursor-pointer transform transition-all active:scale-75"
               onClick={() =>
                 toast(
-                  <p className="text-black dark:text-white uppercase text-sm font-carbonbold">
+                  <p className="text-black dark:text-white uppercase text-sm font-sourcecodepro">
                     Copied
                   </p>,
                   {
@@ -63,7 +63,7 @@ export default function Coins() {
           <div className="flex items-center space-x-4 w-full">
             <img src="/icons/bitcoin.svg" className="w-10 h-10 text-black" />
             <div className="w-[70%] md:w-[80%]">
-              <h3 className="text-black dark:text-white font-carbonbold uppercase text-xl">
+              <h3 className="text-black dark:text-white font-sourcecodepro uppercase text-base">
                 Bitcoin
               </h3>
               <p className="text-black dark:text-white text-sm">
@@ -83,7 +83,7 @@ export default function Coins() {
                     size={22}
                   />
                   <p
-                    className={`text-black dark:text-white font-carbonbold text-sm md:text-sm uppercase text-center ${
+                    className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                       isAllCopied1 ? "text-purple-400" : "text-black"
                     }`}
                   >
@@ -96,7 +96,7 @@ export default function Coins() {
           <div className="flex items-center space-x-4 w-full">
             <img src="/icons/ethereum.svg" className="w-10 h-10 text-black" />
             <div className="w-[70%] md:w-[80%]">
-              <h3 className="text-black dark:text-white font-carbonbold uppercase text-xl">
+              <h3 className="text-black dark:text-white font-sourcecodepro uppercase text-base">
                 Ethereum
               </h3>
               <p className="text-black dark:text-white text-sm">
@@ -116,7 +116,7 @@ export default function Coins() {
                     size={22}
                   />
                   <p
-                    className={`text-black dark:text-white font-carbonbold text-sm md:text-sm uppercase text-center ${
+                    className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                       isAllCopied2 ? "text-purple-400" : "text-black"
                     }`}
                   >

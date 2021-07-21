@@ -55,7 +55,7 @@ export default function Credits() {
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold mt-5">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro mt-5">
           <NextLink href="/">
             <a>
               <p className="text-gray-300 dark:text-gray-600 hover:text-black dark:hover:text-white">
@@ -87,7 +87,7 @@ export default function Credits() {
                     <NextImage src={founder[1]} height={90} width={90} />
                     <div>
                       <h3 className="font-bold">{founder[0]}</h3>
-                      <p className="font-carbonbold text-gray-500 dark:text-gray-400 text-lg uppercase">
+                      <p className="font-sourcecodepro text-gray-500 dark:text-gray-400 text-base">
                         {founder[2]}
                       </p>
                       <p>{founder[3]}</p>
@@ -128,7 +128,7 @@ export default function Credits() {
                   className="border_dash_animated dark:border_dash_animated_dark"
                 >
                   <div className="flex items-center space-x-2">
-                    <h3 className="font-bold uppercase font-carbonbold text-xl border_dashed_animated">
+                    <h3 className="font-bold uppercase font-sourcecodepro text-base border_dashed_animated">
                       {mainTech[0]}
                     </h3>
                     <p>-</p>
@@ -169,7 +169,7 @@ export default function Credits() {
                   className="border_dash_animated dark:border_dash_animated_dark"
                 >
                   <div className="flex items-center space-x-2">
-                    <h3 className="font-bold uppercase font-carbonbold text-xl border_dashed_animated">
+                    <h3 className="font-bold uppercase font-sourcecodepro text-base border_dashed_animated">
                       {library[0]}
                     </h3>
                     <p>-</p>

@@ -9,7 +9,7 @@ export default function EndPostSection({ children, telegramid }) {
         <NextLink href="/">
           <a>
             <div className="inline-flex items-center space-x-1 border-2 border-black dark:border-white p-2 transform transition-all bg-white dark:bg-black hover:bg-black group dark:hover:bg-white">
-              <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black inline-flex font-carbonbold uppercase">
+              <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black inline-flex font-sourcecodepro text-sm uppercase">
                 Home
               </p>
               <Door
@@ -22,7 +22,7 @@ export default function EndPostSection({ children, telegramid }) {
         <NextLink href="/phong">
           <a>
             <div className="inline-flex items-center space-x-1 border-2 border-black dark:border-white p-2 transform transition-all bg-white dark:bg-black hover:bg-black group dark:hover:bg-white">
-              <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black inline-flex font-carbonbold uppercase">
+              <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black inline-flex font-sourcecodepro text-sm uppercase">
                 Touch
               </p>
               <Air
@@ -34,7 +34,7 @@ export default function EndPostSection({ children, telegramid }) {
         </NextLink>
         <a href={`https://t.me/phongchannel/${telegramid}`} target="_blank">
           <div className="inline-flex items-center space-x-1 border-2 border-black dark:border-white p-2 transform transition-all bg-white dark:bg-black hover:bg-black group dark:hover:bg-white">
-            <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black inline-flex font-carbonbold uppercase">
+            <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black inline-flex font-sourcecodepro text-sm uppercase">
               Comment
             </p>
             <Send

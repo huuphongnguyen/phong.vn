@@ -14,7 +14,7 @@ export default function ArchillectGrid({ sync }) {
           <div className="aspect-w-1 aspect-h-1">
             <img src={element.imageSource} className="object-cover" />
           </div>
-          <div className="absolute inline-block opacity-0 group-hover:opacity-100 top-0 px-1 font-carbonbold text-white bg-red-500">
+          <div className="absolute inline-block opacity-0 group-hover:opacity-100 top-0 px-1 font-sourcecodepro text-white bg-red-500">
             {element.id}
           </div>
         </div>

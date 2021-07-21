@@ -27,7 +27,7 @@ export default function MEMESoundGrid({ sync }) {
 
   return (
     <div>
-      <div className="text-black dark:text-white font-carbonbold text-xl mb-3 flex items-center justify-between">
+      <div className="text-black dark:text-white font-sourcecodepro text-base mb-3 flex items-center justify-between">
         <div>
           {isloading ? (
             <div className="flex items-center space-x-1">
@@ -40,12 +40,12 @@ export default function MEMESoundGrid({ sync }) {
               <p>Playing...</p>
             </div>
           ) : (
-            <p className="font-bold text-black dark:text-white font-carbonbold text-xl uppercase">
+            <p className="font-bold text-black dark:text-white font-sourcecodepro text-sm uppercase">
               Just pick 1.
             </p>
           )}
         </div>
-        <div className="text-black dark:text-white flex items-center space-x-2 font-carbonbold">
+        <div className="text-black dark:text-white flex items-center space-x-2 font-sourcecodepro text-base">
           <p>Sound</p>
           <div className="flex items-center space-x-2">
             <div
@@ -56,7 +56,7 @@ export default function MEMESoundGrid({ sync }) {
               }`}
               onClick={() => muted(false)}
             >
-              <p className="text-black dark:text-white font-carbonbold uppercase rainbow_text_hover">
+              <p className="text-black dark:text-white font-sourcecodepro text-sm uppercase rainbow_text_hover">
                 On
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function MEMESoundGrid({ sync }) {
               }`}
               onClick={() => muted(true)}
             >
-              <p className="text-black dark:text-white font-carbonbold uppercase rainbow_text_hover">
+              <p className="text-black dark:text-white font-sourcecodepro text-sm uppercase rainbow_text_hover">
                 Off
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function MEMESoundGrid({ sync }) {
               handlePLAY(element.properties.soundmp3.files[0].name)
             }
           >
-            <p className="text-black font-carbonbold text-xl">
+            <p className="text-black font-sourcecodepro text-base">
               {element.properties.emoji.rich_text[0].plain_text}
             </p>
           </button>

@@ -51,20 +51,20 @@ export default function AXEmbroidery() {
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-base uppercase font-sourcecodepro">
               <p>Front-Page</p>
             </div>
           </a>
         </NextLink>
         <NextLink href="/projects">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-base uppercase font-sourcecodepro">
               <p>/</p>
               <p>PRJ</p>
             </div>
           </a>
         </NextLink>
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro">
           <p>/</p>
           <h1>AXEmbroidery</h1>
         </div>
@@ -118,17 +118,17 @@ export default function AXEmbroidery() {
                   </div>
                   <div className="flex items-center justify-center">
                     <div className="px-2 pb-2">
-                      <p className="text-black dark:text-white font-carbonbold text-xl uppercase">
+                      <p className="text-black dark:text-white font-sourcecodepro text-base uppercase">
                         @phong
                       </p>
                     </div>
                     <div className="px-2 pb-2">
-                      <p className="text-black dark:text-white font-carbonbold text-xl uppercase">
+                      <p className="text-black dark:text-white font-sourcecodepro text-base uppercase">
                         @xuyen
                       </p>
                     </div>
                     <div className="px-2 pb-2">
-                      <p className="text-black dark:text-white font-carbonbold text-xl uppercase">
+                      <p className="text-black dark:text-white font-sourcecodepro text-base uppercase">
                         @anh
                       </p>
                     </div>

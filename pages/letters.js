@@ -16,7 +16,7 @@ export default function Letters() {
   return (
     <Container>
       <div className="items-start mx-auto w-full max-w-3xl">
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold mt-5">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro mt-5">
           <NextLink href="/">
             <a>
               <p className="text-gray-300 dark:text-gray-600 hover:text-black dark:hover:text-white">
@@ -41,7 +41,7 @@ export default function Letters() {
                         className="text-black dark:text-white"
                         size={25}
                       />
-                      <p className="text-black dark:text-white font-carbonbold uppercase">
+                      <p className="text-black dark:text-white font-sourcecodepro text-base uppercase">
                         Letter number: <span>{letter[0]}</span>
                       </p>
                     </div>

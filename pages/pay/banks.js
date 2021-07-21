@@ -70,14 +70,14 @@ export default function Banks() {
         <div className="flex space-x-4">
           <div className="w-[75%] bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <div className="block md:flex space-x-0 md:space-x-2 items-center">
-              <h3 className="text-black dark:text-white font-carbonbold uppercase  text-xl">
+              <h3 className="text-black dark:text-white font-sourcecodepro uppercase text-base">
                 TPBank
               </h3>
               <p className="text-black dark:text-white uppercase text-xs">
                 {t("banks-tpbank-name")}
               </p>
             </div>
-            <p className="text-black dark:text-white font-carbonbold uppercase text-2xl">
+            <p className="text-black dark:text-white font-sourcecodepro uppercase text-xl">
               0707150797
             </p>
             <p className="text-black dark:text-white text-sm uppercase font-bold">
@@ -100,7 +100,7 @@ export default function Banks() {
                   size={22}
                 />
                 <p
-                  className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
+                  className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                     isAllCopied1 ? "text-purple-400" : "text-black"
                   }`}
                 >
@@ -120,7 +120,7 @@ export default function Banks() {
                   size={22}
                 />
                 <p
-                  className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
+                  className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                     isNumCopied1 ? "text-purple-400" : "text-black"
                   }`}
                 >
@@ -134,14 +134,14 @@ export default function Banks() {
         <div className="flex space-x-4">
           <div className="w-[75%] bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <div className="block md:flex space-x-0 md:space-x-2 items-center">
-              <h3 className="text-black dark:text-white font-carbonbold uppercase  text-xl">
+              <h3 className="text-black dark:text-white font-sourcecodepro uppercase text-base">
                 MBBank
               </h3>
               <p className="text-black dark:text-white uppercase text-xs">
                 {t("banks-mbbank-name")}
               </p>
             </div>
-            <p className="text-black dark:text-white font-carbonbold uppercase text-2xl">
+            <p className="text-black dark:text-white font-sourcecodepro uppercase text-xl">
               0707150797
             </p>
             <p className="text-black dark:text-white text-sm uppercase font-bold">
@@ -164,7 +164,7 @@ export default function Banks() {
                   size={22}
                 />
                 <p
-                  className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
+                  className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                     isAllCopied2 ? "text-purple-400" : "text-black"
                   }`}
                 >
@@ -184,7 +184,7 @@ export default function Banks() {
                   size={22}
                 />
                 <p
-                  className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
+                  className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                     isNumCopied2 ? "text-purple-400" : "text-black"
                   }`}
                 >
@@ -198,14 +198,14 @@ export default function Banks() {
         <div className="flex space-x-4">
           <div className="w-[75%] bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <div className="block md:flex space-x-0 md:space-x-2 items-center">
-              <h3 className="text-black dark:text-white font-carbonbold uppercase  text-xl">
+              <h3 className="text-black dark:text-white font-sourcecodepro uppercase text-base">
                 VPBank
               </h3>
               <p className="text-black dark:text-white uppercase text-xs">
                 {t("banks-vpbank-name")}
               </p>
             </div>
-            <p className="text-black dark:text-white font-carbonbold uppercase text-2xl">
+            <p className="text-black dark:text-white font-sourcecodepro uppercase text-xl">
               8 0707150797
             </p>
             <p className="text-black dark:text-white text-sm uppercase font-bold">
@@ -228,7 +228,7 @@ export default function Banks() {
                   size={22}
                 />
                 <p
-                  className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
+                  className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                     isAllCopied3 ? "text-purple-400" : "text-black"
                   }`}
                 >
@@ -248,7 +248,7 @@ export default function Banks() {
                   size={22}
                 />
                 <p
-                  className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
+                  className={`text-black dark:text-white font-sourcecodepro text-sm md:text-sm uppercase text-center ${
                     isNumCopied3 ? "text-purple-400" : "text-black"
                   }`}
                 >

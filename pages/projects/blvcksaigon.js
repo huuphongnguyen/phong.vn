@@ -63,20 +63,20 @@ export default function BLVCKSaigon() {
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-base uppercase font-sourcecodepro">
               <p>Front-Page</p>
             </div>
           </a>
         </NextLink>
         <NextLink href="/projects">
           <a>
-            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-xl uppercase font-carbonbold">
+            <div className="inline-flex items-center space-x-1 text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white text-base uppercase font-sourcecodepro">
               <p>/</p>
               <p>PRJ</p>
             </div>
           </a>
         </NextLink>
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-base uppercase font-sourcecodepro">
           <p>/</p>
           <h1>BLVCKSaigon</h1>
         </div>
@@ -86,7 +86,7 @@ export default function BLVCKSaigon() {
         <div className="border-2 border-gray-200 dark:border-gray-700 p-6 pt-8">
           <div className="w-full flex items-center justify-center relative">
             <div className="inline-flex px-2 py-1 bg-black dark:bg-white absolute transform -translate-y-8">
-              <p className="text-white dark:text-black font-carbonbold uppercase">
+              <p className="text-white dark:text-black font-sourcecodepro uppercase">
                 Next Chapter
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function BLVCKSaigon() {
             <div className="w-full flex items-center justify-center py-4">
               <a href="https://change.vn">
                 <div className="p-2 inline-flex items-center space-x-1 border-2 border-black dark:border-white">
-                  <p className="text-black dark:text-white font-carbonbold uppercase text-xl">
+                  <p className="text-black dark:text-white font-sourcecodepro uppercase text-base">
                     CHANGE.VN
                   </p>
                   <ArrowUpRight
@@ -213,7 +213,7 @@ export default function BLVCKSaigon() {
                   </div>
                   <div className="flex items-center justify-center">
                     <div className="px-2 pb-2">
-                      <p className="text-black dark:text-white font-carbonbold text-xl uppercase">
+                      <p className="text-black dark:text-white font-sourcecodepro text-base uppercase">
                         @phong
                       </p>
                     </div>

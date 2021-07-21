@@ -18,7 +18,7 @@ export default function PayHeader() {
           </div>
         </div>
         <div className="flex items-center space-x-2 justify-center">
-          <h1 className="text-black dark:text-white font-carbonbold uppercase text-2xl inline-flex">
+          <h1 className="text-black dark:text-white font-sourcecodepro uppercase text-xl inline-flex">
             Phong.vn
           </h1>
           <CircleCheck className="text-black dark:text-white" size={22} />
@@ -28,7 +28,7 @@ export default function PayHeader() {
             <NextLink href="/">
               <a>
                 <div className="border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white group inline-flex space-x-1 items-center px-2">
-                  <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black font-carbonbold uppercase text-lg inline-flex">
+                  <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black font-sourcecodepro uppercase text-base inline-flex">
                     Home
                   </p>
                   <Ribbon
@@ -41,7 +41,7 @@ export default function PayHeader() {
             <NextLink href="/phong">
               <a>
                 <div className="border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white group inline-flex space-x-1 items-center px-2">
-                  <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black font-carbonbold uppercase text-lg inline-flex">
+                  <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black font-sourcecodepro uppercase text-base inline-flex">
                     Contact
                   </p>
                   <Heart
@@ -59,7 +59,7 @@ export default function PayHeader() {
         </div>
       </div>
       <div className="items-start mx-auto w-full max-w-xl space-y-6 mt-4">
-        <p className="text-black dark:text-white font-carbonbold uppercase text-xl text-center">
+        <p className="text-black dark:text-white font-sourcecodepro uppercase text-base text-center">
           "Buy me a coffee if you want. <br /> Thank you and love it."
         </p>
         <div className="flex items-center justify-center">

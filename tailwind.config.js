@@ -1,5 +1,4 @@
 const colors = require("tailwindcss/colors");
-const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
@@ -8,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        carbonbold: ["T-26 Carbon Bold", ...defaultTheme.fontFamily.mono],
+        sourcecodepro: "'Source Code Pro', monospace",
       },
       gridTemplateColumns: {
         autoscale: "repeat(auto-fit, minmax(75px, 1fr))",

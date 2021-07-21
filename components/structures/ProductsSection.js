@@ -8,10 +8,10 @@ export default function ProductsSection() {
     <div>
       <div className="flex items-center space-x-2">
         <div className="inline-flex items-center space-x-1">
-          <p className="text-black dark:text-white text-xl uppercase font-carbonbold">
+          <p className="text-black dark:text-white text-base uppercase font-sourcecodepro">
             /
           </p>
-          <h1 className="text-black dark:text-white text-xl uppercase font-carbonbold">
+          <h1 className="text-black dark:text-white text-base uppercase font-sourcecodepro">
             Products
           </h1>
         </div>
@@ -36,7 +36,7 @@ export default function ProductsSection() {
             <div className="transform scale-[0.5] transition-all md:group-hover:scale-[0.7] -mt-20 -mb-20 -ml-4 -mr-4">
               <ChangeCoin />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold uppercase text-xl transform transition-all mx-auto text-center md:group-hover:translate-y-6">
+            <h2 className="text-black dark:text-white font-sourcecodepro uppercase text-base transform transition-all mx-auto text-center md:group-hover:translate-y-6">
               Change.vn
             </h2>
           </div>
@@ -46,7 +46,7 @@ export default function ProductsSection() {
             <div className="transform scale-[0.5] transition-all md:group-hover:scale-[0.7] -mt-20 -mb-20 -ml-4 -mr-4">
               <AXCoin />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold uppercase text-xl transform transition-all mx-auto text-center md:group-hover:translate-y-6">
+            <h2 className="text-black dark:text-white font-sourcecodepro uppercase text-base transform transition-all mx-auto text-center md:group-hover:translate-y-6">
               AX Embroidery
             </h2>
           </div>
@@ -56,7 +56,7 @@ export default function ProductsSection() {
             <div className="transform scale-[0.5] transition-all md:group-hover:scale-[0.7] -mt-20 -mb-20 -ml-4 -mr-4">
               <EMBCoin />
             </div>
-            <h2 className="text-black dark:text-white font-carbonbold uppercase text-xl transform transition-all mx-auto text-center md:group-hover:translate-y-6">
+            <h2 className="text-black dark:text-white font-sourcecodepro uppercase text-base transform transition-all mx-auto text-center md:group-hover:translate-y-6">
               Emb.vn
             </h2>
           </div>

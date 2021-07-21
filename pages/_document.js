@@ -5,20 +5,11 @@ class MyDocument extends Document {
     return (
       <Html lang="vi">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
-            rel="preload"
-            href="/fonts/carbon-bold.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-
-          <link
-            rel="preload"
-            href="/fonts/carbon-bold.woff"
-            as="font"
-            type="font/woff"
-            crossOrigin="anonymous"
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap"
+            rel="stylesheet"
           />
 
           <link href="/static/favicons/phong-vn.ico" rel="shortcut icon" />

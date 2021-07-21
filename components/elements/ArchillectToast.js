@@ -1,11 +1,11 @@
 export default function ArchillectToast({ item }) {
   return (
     <div className="space-y-2">
-      <h3 className="text-xl font-bold font-carbonbold text-black">
+      <h3 className="text-base font-bold font-sourcecodepro text-black">
         BLOCK: {item.id}
       </h3>
       <img src={item.imageSource} />
-      <p className="text-black text-xl font-carbonbold">
+      <p className="text-black text-base font-sourcecodepro">
         References:
         <br />
         <div className="flex">

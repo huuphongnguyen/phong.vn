@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "T-26 Carbon Bold";
-    font-weight: 700;
-    font-style: normal;
-    font-display: optional;
-    src: url(/fonts/carbon-bold.woff2) format("woff2"),
-      url(/fonts/carbon-bold.woff) format("woff");
-  }
-}
-
 @layer utilities {
   .rainbow_contact_button {
     height: 90px;
