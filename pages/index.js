@@ -9,6 +9,8 @@ import SubPageSection from "../components/structures/SubPageSection";
 import TwitterSEO from "../components/TwitterSEO";
 import ProductsSection from "../components/structures/ProductsSection";
 import { Client } from "@notionhq/client";
+import BlockchainSection from "../components/structures/BlockchainSection";
+import TimelineSection from "../components/structures/TimelineSection";
 
 export async function getStaticProps() {
   const notion = new Client({ auth: process.env.NOTION_API_OFFICIAL_KEYS });
@@ -48,7 +50,9 @@ export default function Home({ resultsQuotes }) {
         <InspirationSection />
         <ProductsSection />
         <ProjectsSection />
+        <TimelineSection />
         <ConceptsSection />
+        <BlockchainSection />
         <BlogSection />
         <SubPageSection />
         <StuffSection resultssync={resultsQuotes} />
