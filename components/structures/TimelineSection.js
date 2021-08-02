@@ -1,8 +1,11 @@
 import { IconCircleCheck, IconInfinity } from "@tabler/icons";
 import { useState } from "react";
+import { timelineData2021 } from "../../data/timelineData";
+import { useRouter } from "next/router";
 
 export default function TimelineSection() {
   const [showTimeline, setShowTimeline] = useState(false);
+  const router = useRouter();
 
   return (
     <div>
@@ -41,19 +44,21 @@ export default function TimelineSection() {
             <h2 className="text-black dark:text-white font-bold text-xl">
               2021
             </h2>
-            <div className="flex items-start py-2 space-x-2">
-              <div className="w-7 h-7 flex items-start justify-center mt-[2px]">
-                <IconCircleCheck className="text-green-500" />
+            {timelineData2021.map((period, index) => (
+              <div key={index} className="flex items-start py-2 space-x-2">
+                <div className="w-7 h-7 flex items-start justify-center mt-[2px]">
+                  <IconCircleCheck className="text-green-500" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-black dark:text-white">
+                    {router.locale === "vi-VN" ? period[0] : period[2]}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-200">
+                    {router.locale === "vi-VN" ? period[1] : period[3]}
+                  </p>
+                </div>
               </div>
-              <div className="">
-                <h3 className="font-bold text-black dark:text-white">
-                  Bắt đầu Timeline
-                </h3>
-                <p className="text-gray-700 dark:text-gray-200">
-                  Xây dựng timeline, liệt kê ra những cột mốc quan trọng
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

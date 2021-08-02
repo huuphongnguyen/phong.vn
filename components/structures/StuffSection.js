@@ -208,7 +208,7 @@ export default function StuffSection({ resultssync }) {
                 {t("stuff-moments-together")}
               </p>
               <a href="https://futureme.org" target="_blank">
-                <div className="items-center space-x-2 mt-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
+                <div className="items-center space-x-2 mt-2 px-2 py-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
                   <div className="w-[124px] h-[22px] flex relative">
                     <img src="/icons/futureme.svg" className="object-cover" />
                   </div>
@@ -217,8 +217,21 @@ export default function StuffSection({ resultssync }) {
                   </p>
                 </div>
               </a>
+              <a href="https://www.snapchat.com/add/isnhp" target="_blank">
+                <div className="items-center space-x-2 mt-2 px-2 py-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
+                  <div>
+                    <img
+                      src="/icons/snapchat.svg"
+                      className="w-[40px] h-auto"
+                    />
+                  </div>
+                  <p className="text-black dark:text-white font-sourcecodepro text-sm uppercase">
+                    Snap / @isnhp
+                  </p>
+                </div>
+              </a>
               <a href="https://dispo.fun/@shop" target="_blank">
-                <div className="inline-flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-800 px-0 md:px-4 py-2 rounded-lg group">
+                <div className="inline-flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-800 px-0 md:px-1 py-2 rounded-lg group">
                   <div className="w-12 h-12 relative transform transition-all group-hover:rotate-[70deg]">
                     <img
                       src="/static/dispo-roll-green.gif"
