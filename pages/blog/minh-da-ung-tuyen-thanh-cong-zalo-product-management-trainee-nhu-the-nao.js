@@ -496,8 +496,8 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
             Cảm ơn vì đã ở đây và đọc bài viết này của mình.
           </Paragraph>
         </div>
-        <EndPostSection telegramid="15">
-          <TelegramComments datatelegramdiscussion="phongchannel/15" />
+        <EndPostSection telegramid="17">
+          <TelegramComments datatelegramdiscussion="phongchannel/17" />
         </EndPostSection>
       </div>
     </Container>
