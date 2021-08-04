@@ -4,9 +4,11 @@ import {
   IconCurrencyEthereum,
 } from "@tabler/icons";
 import { useState } from "react";
+import useTranslation from "next-translate/useTranslation";
 
 export default function BlockchainSection() {
   const [showNFTs, setShowNFTs] = useState(false);
+  const { t } = useTranslation("common");
 
   return (
     <div>
@@ -102,6 +104,31 @@ export default function BlockchainSection() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="space-y-2">
+          <div>
+            <p className="text-black dark:text-white text-sm">
+              {t("blockchain-foundation-text")}
+            </p>
+          </div>
+          <div>
+            <a href="https://foundation.app/@isnhp" target="_blank">
+              <div className="inline-flex items-center space-x-2 border-2 border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white rounded-xl px-2 py-1 border-dashed transition-all hover:scale-[1.05] cursor-pointer">
+                <div>
+                  <img
+                    src="/icons/foundation.svg"
+                    className="w-[60px] h-auto"
+                  />
+                </div>
+                <p className="font-bold text-black dark:text-white text-base font-mono">
+                  Foundation/
+                </p>
+                <p className="inline-flex rainbow_text_foundation font-bold font-mono text-base">
+                  @isnhp
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
