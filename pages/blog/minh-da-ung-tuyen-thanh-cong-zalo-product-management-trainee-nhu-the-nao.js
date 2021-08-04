@@ -60,7 +60,7 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <div className="w-full aspect-h-1 aspect-w-1 object-cover relative  md:col-span-1">
               <img
-                src="/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-image-phongvn.gif"
+                src="https://media.giphy.com/media/B150T0UlLdFMkTFv3H/giphy.gif"
                 className="absolute object-cover"
               />
             </div>

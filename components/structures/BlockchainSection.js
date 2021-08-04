@@ -114,17 +114,17 @@ export default function BlockchainSection() {
           </div>
           <div>
             <a href="https://foundation.app/@isnhp" target="_blank">
-              <div className="inline-flex items-center space-x-2 border-2 border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white rounded-xl px-2 py-1 border-dashed transition-all hover:scale-[1.05] cursor-pointer">
+              <div className="inline-flex items-center space-x-2 border-2 bg-white border-gray-300 dark:border-white hover:border-black dark:hover:border-white rounded-xl px-2 py-1 border-dashed transition-all hover:scale-[1.05] cursor-pointer">
                 <div>
                   <img
                     src="/icons/foundation.svg"
                     className="w-[60px] h-auto"
                   />
                 </div>
-                <p className="font-bold text-black dark:text-white text-base font-mono">
+                <p className="font-bold text-black text-base font-mono">
                   Foundation/
                 </p>
-                <p className="inline-flex rainbow_text_foundation font-bold font-mono text-base">
+                <p className="inline-flex text-black font-bold font-mono text-base">
                   @isnhp
                 </p>
               </div>
