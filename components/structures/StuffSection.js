@@ -278,6 +278,24 @@ export default function StuffSection({ resultssync }) {
               </div>
             </div>
           </div>
+          <div className="space-y-4">
+            <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
+              Connecting with
+            </h2>
+            <div>
+              <a
+                href="https://integrately.com?ref=or8jcf&utm_campaign=Website Referral"
+                target="_blank"
+              >
+                <img
+                  src="https://integrately-images.s3-us-west-2.amazonaws.com/we-automate-with-integrately-light.svg"
+                  width="120"
+                  alt="Integrately - Integration platform"
+                  title="Click to learn more"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
