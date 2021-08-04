@@ -1,5 +1,13 @@
 export const blogsData = [
   [
+    "Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế nào?",
+    "/icons/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao-feature-icon.svg",
+    ["#vi-blog"],
+    [""],
+    "2021-08-04",
+    "https://phong.vn/blog/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao",
+  ],
+  [
     "Notion là gì? Ứng dụng quan trọng nhất của mình",
     "/icons/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-icon.svg",
     ["#vi-blog"],

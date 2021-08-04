@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="425px" height="425px" viewBox="0 0 425 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao-feature-icon</title>
+    <g id="minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao-feature-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M109.401236,3 L316.598764,3 C353.596792,3 367.013171,6.85226286 380.539097,14.0860072 C394.065023,21.3197516 404.680248,31.9349774 411.913993,45.4609033 C419.147737,58.9868292 423,72.4032081 423,109.401236 L423,316.598764 C423,353.596792 419.147737,367.013171 411.913993,380.539097 C404.680248,394.065023 394.065023,404.680248 380.539097,411.913993 C367.013171,419.147737 353.596792,423 316.598764,423 L109.401236,423 C72.4032081,423 58.9868292,419.147737 45.4609033,411.913993 C31.9349774,404.680248 21.3197516,394.065023 14.0860072,380.539097 C6.85226286,367.013171 3,353.596792 3,316.598764 L3,109.401236 C3,72.4032081 6.85226286,58.9868292 14.0860072,45.4609033 C21.3197516,31.9349774 31.9349774,21.3197516 45.4609033,14.0860072 C58.9868292,6.85226286 72.4032081,3 109.401236,3 Z" id="Rectangle" fill="#FFFFFF"></path>
+        <g id="tabler-icon-circle-square" transform="translate(12.500000, 12.500000)">
+            <polygon id="Path" points="0 0 400 0 400 400 0 400"></polygon>
+            <circle id="Oval" stroke="#000000" stroke-width="33.3333333" stroke-linecap="round" stroke-linejoin="round" cx="158.333333" cy="158.333333" r="108.333333"></circle>
+            <rect id="Rectangle" stroke="#000000" stroke-width="33.3333333" stroke-linecap="round" stroke-linejoin="round" x="166.666667" y="166.666667" width="183.333333" height="183.333333" rx="33.3333333"></rect>
+        </g>
+    </g>
+</svg>
