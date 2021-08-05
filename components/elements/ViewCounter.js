@@ -16,5 +16,9 @@ export default function ViewCounter({ slug }) {
     registerView();
   }, [slug]);
 
-  return `${views > 0 ? views.toLocaleString() : "–––"} views`;
+  return (
+    <p className="text-black">
+      {views > 0 ? views.toLocaleString() : "–––"} views
+    </p>
+  );
 }
