@@ -92,7 +92,7 @@ export default function StuffSection({ resultssync }) {
                         />
                       </div>
                     </a>
-                    <a href="https://soundcloud.com/donuf" target="_blank">
+                    <a href="https://soundcloud.com/isnhp" target="_blank">
                       <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-sourcecodepro text-sm uppercase items-center space-x-2 group">
                         Soundcloud
                         <ArrowUpRight

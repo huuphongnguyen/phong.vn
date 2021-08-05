@@ -10,6 +10,7 @@ import EndPostSection from "../../components/structures/EndPostSection";
 import TelegramComments from "../../components/elements/TelegramComments";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
+import ViewCounter from "../../components/elements/ViewCounter";
 
 export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Management_trainee_nhu_the_nao() {
   const seotitle = `Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế nào?`;
@@ -57,6 +58,7 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
               Published at: 2021-08-04
             </div>
           </div>
+          <ViewCounter slug="blog/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <div className="w-full aspect-h-1 aspect-w-1 object-cover relative  md:col-span-1">
               <img
