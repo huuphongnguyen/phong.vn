@@ -1,6 +1,4 @@
-import { Pin } from "akar-icons";
 import Container from "../../components/Container";
-import AuthorBadge from "../../components/elements/AuthorBadge";
 import Paragraph from "../../components/elements/block/Paragraph";
 import TableOfContents from "../../components/elements/block/TableOfContents";
 import Heading2 from "../../components/elements/block/Heading2";
@@ -10,7 +8,7 @@ import EndPostSection from "../../components/structures/EndPostSection";
 import TelegramComments from "../../components/elements/TelegramComments";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
-import ViewCounter from "../../components/elements/ViewCounter";
+import BlogHeader from "../../components/structures/BlogHeader";
 
 export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Management_trainee_nhu_the_nao() {
   const seotitle = `Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế nào?`;
@@ -18,6 +16,14 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
   const seourl = `https://phong.vn/blog/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao`;
   const seopreviewimg =
     "/static/images/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao-feature-img.png";
+  const headerslug =
+    "minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao";
+  const headerpublish = "2021-08-04";
+  const headerreadingtime = "14";
+  const headerfeatureimggif =
+    "https://media.giphy.com/media/B150T0UlLdFMkTFv3H/giphy.gif";
+  const headerauthors = "Nguyễn Hữu Phong";
+
   return (
     <Container>
       <NextSeo
@@ -46,36 +52,15 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
-        <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">
-          <h1 className="text-2xl font-bold text-black dark:text-white">
-            Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế
-            nào?
-          </h1>
-          <div className="md:flex space-y-3 md:space-y-0 items-start justify-between">
-            <AuthorBadge />
-            <div className="flex items-center text-black dark:text-whtie uppercase text-sm font-bold dark:text-white">
-              <Pin className="mr-1" />
-              Published at: 2021-08-04
-            </div>
-          </div>
-          <ViewCounter slug="minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao" />
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            <div className="w-full aspect-h-1 aspect-w-1 object-cover relative  md:col-span-1">
-              <img
-                src="https://media.giphy.com/media/B150T0UlLdFMkTFv3H/giphy.gif"
-                className="absolute object-cover"
-              />
-            </div>
-            <div className=" md:col-span-4">
-              <p className="text-black dark:text-white">
-                Mình đã ứng tuyển thành công Zalo Product Management Trainee như
-                thế nào? Trong bài viết này mình sẽ ghi lại toàn bộ quá trình
-                mình đã ứng tuyển và vượt qua những vòng thử thách để được nhận
-                vào chương trình Zalo Product Management Trainee 2021.
-              </p>
-            </div>
-          </div>
-        </div>
+        <BlogHeader
+          title={seotitle}
+          publishedat={headerpublish}
+          readingtime={headerreadingtime}
+          viewcounterslug={headerslug}
+          description={seodescrip}
+          featureimggif={headerfeatureimggif}
+          authors={headerauthors}
+        />
         <div className="text-black dark:text-white space-y-3">
           <Paragraph>
             Bài viết này được viết ra với mục đích giúp mình lưu trữ lại điều

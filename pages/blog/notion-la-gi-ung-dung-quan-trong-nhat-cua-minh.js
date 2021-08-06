@@ -1,6 +1,4 @@
 import Container from "../../components/Container";
-import AuthorBadge from "../../components/elements/AuthorBadge";
-import { Pin } from "akar-icons";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import Paragraph from "../../components/elements/block/Paragraph";
@@ -10,6 +8,7 @@ import Heading3 from "../../components/elements/block/Heading3";
 import BulletList from "../../components/elements/block/BulletList";
 import EndPostSection from "../../components/structures/EndPostSection";
 import TelegramComments from "../../components/elements/TelegramComments";
+import BlogHeader from "../../components/structures/BlogHeader";
 
 export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
   const seotitle = `Notion là gì? Ứng dụng quan trọng nhất của mình`;
@@ -17,6 +16,12 @@ export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
   const seourl = `https://phong.vn/blog/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh`;
   const seopreviewimg =
     "/static/images/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-img.png";
+  const headerslug = "notion-la-gi-ung-dung-quan-trong-nhat-cua-minh";
+  const headerpublish = "2021-05-29";
+  const headerreadingtime = "";
+  const headerfeatureimggif =
+    "/static/images/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-banner.gif";
+  const headerauthors = "Nguyễn Hữu Phong";
 
   return (
     <Container>
@@ -46,42 +51,15 @@ export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
-        <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">
-          <h1 className="text-2xl font-bold text-black dark:text-white">
-            Notion là gì? Ứng dụng quan trọng nhất của mình
-          </h1>
-          <div className="md:flex space-y-3 md:space-y-0 items-start justify-between">
-            <AuthorBadge />
-            <div className="flex items-center text-black dark:text-whtie uppercase text-sm font-bold dark:text-white">
-              <Pin className="mr-1" />
-              Published at: 2021-05-29
-            </div>
-          </div>
-          <div className="pb-2">
-            <div className="w-[150px] h-[150px] mr-4 mb-4 relative float-left">
-              <img
-                src="/static/images/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-banner.gif"
-                className="absolute object-cover"
-              />
-            </div>
-            <div className=" md:col-span-4">
-              <p className="text-black dark:text-white text-sm">
-                Notion là gì? Và tại sao mình xem nó là ứng dụng quan trọng nhất
-                của mình. Trong bài viết này mình sẽ viết về những gì mình cảm
-                nhận và trải qua trong suốt gần 4 năm dùng Notion. Nó gần như đã
-                thay thế các ứng dụng ghi chú, soạn thảo của mình như Evernote,
-                Word, Page,... Gần như mọi thông tin mình tìm hiểu và học được,
-                mọi dự án mình làm, mỗi bài viết mình viết đều được viết và lưu
-                trữ tại Notion đầu tiên. Với tất cả những điều tuyệt vời và
-                những tiện ích mà Notion mang lại cho mình trong suốt gần nửa
-                thập kỷ qua, và việc họ vừa ra mắt Notion API chính thức. Mình
-                nghĩ mình sẽ viết lại một bài blog trên trang cá nhân của mình
-                phong.vn để ghi lại những ký ức về nó và chia sẻ đến những bạn
-                chưa biết.
-              </p>
-            </div>
-          </div>
-        </div>
+        <BlogHeader
+          title={seotitle}
+          publishedat={headerpublish}
+          readingtime={headerreadingtime}
+          viewcounterslug={headerslug}
+          description={seodescrip}
+          featureimggif={headerfeatureimggif}
+          authors={headerauthors}
+        />
         <div className="text-black dark:text-white space-y-3">
           <Paragraph>
             Rất khó để kể chi tiết và giới thiệu tất cả những điểm hay của

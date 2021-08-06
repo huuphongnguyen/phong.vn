@@ -1,5 +1,3 @@
-import { Pin } from "akar-icons";
-import AuthorBadge from "../../components/elements/AuthorBadge";
 import Container from "../../components/Container";
 import Paragraph from "../../components/elements/block/Paragraph";
 import Heading2 from "../../components/elements/block/Heading2";
@@ -11,6 +9,7 @@ import TwitterSEO from "../../components/TwitterSEO";
 import TelegramComments from "../../components/elements/TelegramComments";
 import EndPostSection from "../../components/structures/EndPostSection";
 import TableOfContents from "../../components/elements/block/TableOfContents";
+import BlogHeader from "../../components/structures/BlogHeader";
 
 export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
   const seotitle = `Mình đã mua tên miền .ETH của ENS Domain như thế nào?`;
@@ -18,6 +17,13 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
   const seourl = `https://phong.vn/blog/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao`;
   const seopreviewimg =
     "/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.png";
+  const headerslug = "minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao";
+  const headerpublish = "2021-05-21";
+  const headerreadingtime = "";
+  const headerfeatureimggif =
+    "/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.gif";
+  const headerauthors = "Nguyễn Hữu Phong";
+
   return (
     <Container>
       <NextSeo
@@ -46,40 +52,15 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
-        <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">
-          <h1 className="text-2xl font-bold text-black dark:text-white">
-            Mình đã mua tên miền .ETH của ENS Domain như thế nào?
-          </h1>
-          <div className="md:flex space-y-3 md:space-y-0 items-start justify-between">
-            <AuthorBadge />
-            <div className="flex items-center text-black dark:text-whtie uppercase text-sm font-bold dark:text-white">
-              <Pin className="mr-1" />
-              Published at: 2021-05-21
-            </div>
-          </div>
-          <div className="pb-2">
-            <div className="w-[150px] h-[150px] mr-4 mb-4 relative float-left">
-              <img
-                src="/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.gif"
-                className="absolute object-cover"
-              />
-            </div>
-            <div className=" md:col-span-4">
-              <p className="text-black dark:text-white text-sm">
-                Mình đã mua tên miền .ETH của ENS Domain trên mạng blockchain
-                của Ethereum như thế nào? Trong bài viết này mình sẽ viết lại
-                quá trình mình mua nó, thật sự rất dễ dàng và nhanh chóng.
-                Blockchain và cách mà các DApps tương tác với nhau khiến mình
-                thật sự rất bất ngờ, tương lai các ứng dụng nên được liên kết
-                giống như vậy. <br />
-                Mình chưa từng mua tên miền .ETH của ENS Domain bao giờ nên đây
-                là lần đầu mình thử thực hiện, tức là mình cũng sẽ ngáo ngơ chưa
-                biết gì luôn ấy 😂 điều này sẽ khiến cho trải nghiệm trở nên thú
-                vị hơn rất nhiều.
-              </p>
-            </div>
-          </div>
-        </div>
+        <BlogHeader
+          title={seotitle}
+          publishedat={headerpublish}
+          readingtime={headerreadingtime}
+          viewcounterslug={headerslug}
+          description={seodescrip}
+          featureimggif={headerfeatureimggif}
+          authors={headerauthors}
+        />
         <div className="text-black dark:text-white space-y-3">
           <Paragraph>
             Trước khi đi vào từng bước mình muốn giới thiệu sơ qua một vài thứ

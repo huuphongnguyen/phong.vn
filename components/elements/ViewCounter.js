@@ -17,8 +17,9 @@ export default function ViewCounter({ slug }) {
   }, [slug]);
 
   return (
-    <p className="text-black">
-      {views > 0 ? views.toLocaleString() : "–––"} views
+    <p className="text-black dark:text-white text-sm">
+      <strong>Lượt xem: </strong>
+      {views > 0 ? views.toLocaleString() : "–––"} lượt
     </p>
   );
 }

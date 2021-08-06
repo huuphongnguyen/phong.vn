@@ -1,11 +1,10 @@
-import { Pin } from "akar-icons";
 import Container from "../../components/Container";
-import AuthorBadge from "../../components/elements/AuthorBadge";
 import ExternalLink from "../../components/elements/ExternalLink";
 import TelegramComments from "../../components/elements/TelegramComments";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import EndPostSection from "../../components/structures/EndPostSection";
+import BlogHeader from "../../components/structures/BlogHeader";
 
 export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
   const seotitle = `Dispo là gì? Tại sao mình thích Dispo?`;
@@ -13,6 +12,12 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
   const seourl = `https://phong.vn/blog/dispo-la-gi-tai-sao-minh-thich-dispo`;
   const seopreviewimg =
     "/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-img.png";
+  const headerslug = "dispo-la-gi-tai-sao-minh-thich-dispo";
+  const headerpublish = "2021-02-15";
+  const headerreadingtime = "";
+  const headerfeatureimggif =
+    "/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-image-phongvn.gif";
+  const headerauthors = "Nguyễn Hữu Phong";
 
   return (
     <Container>
@@ -42,34 +47,15 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
-        <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">
-          <h1 className="text-2xl font-bold text-black dark:text-white">
-            Dispo là gì? Tại sao mình thích Dispo?
-          </h1>
-          <div className="md:flex space-y-3 md:space-y-0 items-start justify-between">
-            <AuthorBadge />
-            <div className="flex items-center text-black dark:text-whtie uppercase text-sm font-bold dark:text-white">
-              <Pin className="mr-1" />
-              Published at: 2021-02-15
-            </div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            <div className="w-full aspect-h-1 aspect-w-1 object-cover relative  md:col-span-1">
-              <img
-                src="/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-image-phongvn.gif"
-                className="absolute object-cover"
-              />
-            </div>
-            <div className=" md:col-span-4">
-              <p className="text-black dark:text-white">
-                Dispo là gì? Tại sao mình rất thích Dispo? Đây chắc là những câu
-                hỏi mà mình sẽ trả lời trong bài viết này. Dispo đặc biệt đến
-                mức mình phải viết một bài blog trên trang cá nhân của mình để
-                nói về nó.
-              </p>
-            </div>
-          </div>
-        </div>
+        <BlogHeader
+          title={seotitle}
+          publishedat={headerpublish}
+          readingtime={headerreadingtime}
+          viewcounterslug={headerslug}
+          description={seodescrip}
+          featureimggif={headerfeatureimggif}
+          authors={headerauthors}
+        />
 
         <div className="text-black dark:text-white space-y-3">
           <p>

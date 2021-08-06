@@ -1,6 +1,4 @@
-import { Pin } from "akar-icons";
 import Container from "../../components/Container";
-import AuthorBadge from "../../components/elements/AuthorBadge";
 import Quote from "../../components/elements/block/Quote";
 import Paragraph from "../../components/elements/block/Paragraph";
 import Heading2 from "../../components/elements/block/Heading2";
@@ -13,6 +11,7 @@ import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import TelegramComments from "../../components/elements/TelegramComments";
 import EndPostSection from "../../components/structures/EndPostSection";
+import BlogHeader from "../../components/structures/BlogHeader";
 
 export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_truc_Anh_Xuyen() {
   const seotitle = `Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến`;
@@ -20,6 +19,14 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
   const seourl = `https://phong.vn/blog/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen`;
   const seopreviewimg =
     " /static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-img.png";
+  const headerslug =
+    "case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen";
+  const headerpublish = "2019-06-11";
+  const headerreadingtime = "";
+  const headerfeatureimggif =
+    "/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-image-phongvn.gif";
+  const headerauthors = "Nguyễn Hữu Phong";
+
   return (
     <Container>
       <NextSeo
@@ -48,39 +55,15 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
-        <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">
-          <h1 className="text-2xl font-bold text-black dark:text-white">
-            Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến
-          </h1>
-          <div className="md:flex space-y-3 md:space-y-0 items-start justify-between">
-            <AuthorBadge />
-            <div className="flex items-center text-black dark:text-whtie uppercase text-sm font-bold dark:text-white">
-              <Pin className="mr-1" />
-              Published at: 2019-06-11
-            </div>
-          </div>
-          <div className="pb-2">
-            <div className="w-[150px] h-[150px] mr-4 mb-4 relative float-left">
-              <img
-                src="/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-image-phongvn.gif"
-                className="absolute object-cover"
-              />
-            </div>
-            <div className=" md:col-span-4">
-              <p className="text-black dark:text-white text-sm">
-                Case Study: Quá trình tái cấu trúc – xây dựng thương hiệu cho
-                Anh Xuyến , trong bài viết này mình sẽ nói về phần nào đó quá
-                trình mình đã gần như làm lại mọi thứ tại đây. Đây chỉ là case
-                study của mình, nó có thể đúng hoặc sai, nó cũng được hình thành
-                từ kinh nghiệm và những gì mình hiểu. Tất nhiên, mọi case study
-                đều là tham khảo và bài viết này cũng là một bản báo cáo dành
-                cho chính bản thân mình về những gì mình đã trả qua tại Thêu vi
-                tính Anh Xuyến, hiện tại doanh nghiệp này đang trải qua một giai
-                đoạn thay đổi và mình sẽ làm rất nhiều thứ khác.
-              </p>
-            </div>
-          </div>
-        </div>
+        <BlogHeader
+          title={seotitle}
+          publishedat={headerpublish}
+          readingtime={headerreadingtime}
+          viewcounterslug={headerslug}
+          description={seodescrip}
+          featureimggif={headerfeatureimggif}
+          authors={headerauthors}
+        />
         <div className="text-black dark:text-white space-y-3">
           <Quote>
             Những gì đã đưa chúng ta đến đây, không thể đưa chúng ta đi xa thêm
