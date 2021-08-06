@@ -1,6 +1,9 @@
 import useTranslation from "next-translate/useTranslation";
 import { Hashtag_vi_blog, Hashtag_en_blog } from "../elements/HashtagsData";
 import { blogsData } from "../../data/blogsData";
+import useSWR from "swr";
+import fetcher from "../../lib/fetcher";
+import HomeViewCounter from "../elements/HomeViewsCounter";
 
 export default function BlogSection() {
   const { t } = useTranslation();
@@ -16,6 +19,23 @@ export default function BlogSection() {
         <h1 className="text-black dark:text-white uppercase font-sourcecodepro text-base">
           Blog
         </h1>
+      </div>
+      <div className="p-2 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-xl my-2">
+        <p className="text-sm text-black dark:text-white">
+          <span className="text-white dark:text-black px-1 font-bold text-xs mr-1 bg-black dark:bg-white">
+            NEW
+          </span>
+          Phong vừa sử dụng{" "}
+          <a
+            href="https://www.planetscale.com/"
+            target="_blank"
+            className="font-bold"
+          >
+            PlanetScale
+          </a>{" "}
+          (một dịch vụ database mới) để xây dựng "lượt xem" cho các bài viết.
+          Được đếm mới từ 06/08/2021
+        </p>
       </div>
       <div className="flex items-start space-x-4 md:space-x-6 pl-3">
         <div className="pr-4 py-2 space-y-4 md:space-y-2">
@@ -56,6 +76,7 @@ export default function BlogSection() {
                       {note}
                     </p>
                   ))}
+                  <HomeViewCounter slug={blog[6]} checkblog={blog[3]} />
                 </div>
                 <a href={blog[5]}>
                   <h2 className="text-black dark:text-white inline-block font-bold rainbow_text_hover">

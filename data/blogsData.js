@@ -6,6 +6,7 @@ export const blogsData = [
     [""],
     "2021-08-04",
     "https://phong.vn/blog/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao",
+    "minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao",
   ],
   [
     "Notion là gì? Ứng dụng quan trọng nhất của mình",
@@ -14,6 +15,7 @@ export const blogsData = [
     [""],
     "2021-05-29",
     "https://phong.vn/blog/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh",
+    "notion-la-gi-ung-dung-quan-trong-nhat-cua-minh",
   ],
   [
     "Mình đã mua tên miền .ETH của ENS Domain như thế nào?",
@@ -22,6 +24,7 @@ export const blogsData = [
     [""],
     "2021-05-24",
     "https://phong.vn/blog/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao",
+    "minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao",
   ],
   [
     "Dispo là gì? Tại sao mình thích Dispo?",
@@ -30,6 +33,7 @@ export const blogsData = [
     [""],
     "2021-02-15",
     "https://phong.vn/blog/dispo-la-gi-tai-sao-minh-thich-dispo",
+    "dispo-la-gi-tai-sao-minh-thich-dispo",
   ],
   [
     "How to export font files of Adobe Fonts on MacOS",
@@ -38,6 +42,7 @@ export const blogsData = [
     ["dev.to"],
     "2021-01-11",
     "https://dev.to/black/how-to-export-font-files-of-adobe-fonts-on-macos-1o08",
+    "how-to-export-font-files-of-adobe-fonts-on-macos-1o08",
   ],
   [
     "Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến",
@@ -46,5 +51,6 @@ export const blogsData = [
     [""],
     "2019-06-11",
     "https://phong.vn/blog/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen",
+    "case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen",
   ],
 ];
