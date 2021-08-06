@@ -19,7 +19,7 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
     "/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.png";
   const headerslug = "minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao";
   const headerpublish = "2021-05-21";
-  const headerreadingtime = "";
+  const headerreadingtime = "12";
   const headerfeatureimggif =
     "/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.gif";
   const headerauthors = "Nguyễn Hữu Phong";

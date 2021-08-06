@@ -1,8 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import { Hashtag_vi_blog, Hashtag_en_blog } from "../elements/HashtagsData";
 import { blogsData } from "../../data/blogsData";
-import useSWR from "swr";
-import fetcher from "../../lib/fetcher";
 import HomeViewCounter from "../elements/HomeViewsCounter";
 
 export default function BlogSection() {
@@ -33,8 +31,8 @@ export default function BlogSection() {
           >
             PlanetScale
           </a>{" "}
-          (một dịch vụ database mới) để xây dựng "lượt xem" cho các bài viết.
-          Được đếm mới từ 06/08/2021
+          (một dịch vụ database mới) để xây dựng "lượt xem" cho các bài viết
+          trên website này. Được đếm mới từ 06/08/2021
         </p>
       </div>
       <div className="flex items-start space-x-4 md:space-x-6 pl-3">

@@ -18,7 +18,7 @@ export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
     "/static/images/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-img.png";
   const headerslug = "notion-la-gi-ung-dung-quan-trong-nhat-cua-minh";
   const headerpublish = "2021-05-29";
-  const headerreadingtime = "";
+  const headerreadingtime = "15";
   const headerfeatureimggif =
     "/static/images/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-banner.gif";
   const headerauthors = "Nguyễn Hữu Phong";

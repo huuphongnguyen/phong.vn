@@ -28,6 +28,7 @@ $ yarn dev
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Dropbox](https://dropbox.com)
 - [Notion](https://notion.com)
+- [PLanetScale](https://www.planetscale.com)
 
 ### Inspiration
 

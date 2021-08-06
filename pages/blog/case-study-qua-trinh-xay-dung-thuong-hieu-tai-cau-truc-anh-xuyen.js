@@ -22,7 +22,7 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
   const headerslug =
     "case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen";
   const headerpublish = "2019-06-11";
-  const headerreadingtime = "";
+  const headerreadingtime = "35";
   const headerfeatureimggif =
     "/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-image-phongvn.gif";
   const headerauthors = "Nguyễn Hữu Phong";

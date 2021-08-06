@@ -14,7 +14,7 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
     "/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-img.png";
   const headerslug = "dispo-la-gi-tai-sao-minh-thich-dispo";
   const headerpublish = "2021-02-15";
-  const headerreadingtime = "";
+  const headerreadingtime = "7";
   const headerfeatureimggif =
     "/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-image-phongvn.gif";
   const headerauthors = "Nguyễn Hữu Phong";
