@@ -31,8 +31,7 @@ export default function BlogSection() {
           >
             PlanetScale
           </a>{" "}
-          (một dịch vụ database mới) để xây dựng "lượt xem" cho các bài viết
-          trên website này. Được đếm mới từ 06/08/2021
+          (một dịch vụ database mới) để xây dựng "lượt xem".
         </p>
       </div>
       <div className="flex items-start space-x-4 md:space-x-6 pl-3">

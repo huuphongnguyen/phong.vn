@@ -14,8 +14,13 @@ import TimelineSection from "../components/structures/TimelineSection";
 
 export async function getStaticProps() {
   const notion = new Client({ auth: process.env.NOTION_API_OFFICIAL_KEYS });
-
   const databaseQuotesId = process.env.NOTION_PAGE_ID_QUOTES_PAGE;
+
+  const apiUrlOpenSea =
+    "https://api.opensea.io/api/v1/assets?owner=0x09e1665ffe61b0620804b2549e9d6e42d29513b1&order_direction=desc&offset=0&limit=20";
+  const apiOptionOpenSea = { method: "GET" };
+  const apiDataOpenSea = await fetch(apiUrlOpenSea, apiOptionOpenSea);
+  const dataFromOpenSeaAPI = await apiDataOpenSea.json();
 
   const responseQuotes = await notion.databases.query({
     database_id: databaseQuotesId,
@@ -24,11 +29,13 @@ export async function getStaticProps() {
   return {
     props: {
       resultsQuotes: responseQuotes.results,
+      resultsOpenSeaAssets: dataFromOpenSeaAPI.assets,
     },
+    revalidate: 1,
   };
 }
 
-export default function Home({ resultsQuotes }) {
+export default function Home({ resultsQuotes, resultsOpenSeaAssets }) {
   const seotitle = `PHONG.VN - Phong's personal website`;
   const seodescrip = `Trang cá nhân của Nguyễn Hữu Phong. Được xây dựng bằng Next.js / TailwindCSS và lưu trữ tại Vercel. Nơi chia sẻ những dự án, blog, mấy thứ hay ho của Phong`;
   const seourl = `https://phong.vn`;
@@ -50,10 +57,10 @@ export default function Home({ resultsQuotes }) {
         <InspirationSection />
         <ProductsSection />
         <ProjectsSection />
-        <TimelineSection />
-        <ConceptsSection />
-        <BlockchainSection />
         <BlogSection />
+        <TimelineSection />
+        <BlockchainSection data={resultsOpenSeaAssets} />
+        <ConceptsSection />
         <SubPageSection />
         <StuffSection resultssync={resultsQuotes} />
       </div>

@@ -1,5 +1,11 @@
 export const timelineData2021 = [
   [
+    "Lần đầu Minted NFT",
+    "Lần đầu tiên mình minted một bức ảnh rất quan trọng của mình trên OpenSea để biến nó trở thành một NFT.",
+    "My first NFT minted",
+    "First time I minted my very important photo on OpenSea to turn it into an NFT.",
+  ],
+  [
     "Giữ lại được người bạn thân nhất",
     "Suốt 10 tháng, đó là một khoảng thời gian dài. Mình đã nghĩ mình đã mất đi người bạn ấy. Thật khó để vượt qua và giữ lại, nhưng mình đã làm được. May mắn thật.",
     "Successfully keep my best friend beside",
