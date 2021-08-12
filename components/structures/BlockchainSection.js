@@ -43,7 +43,7 @@ export default function BlockchainSection({ data }) {
           <NFTOwner data={data} />
         </div>
         <div className="space-y-2">
-          <div className="grid grid-cols-1 md:flex md:items-center gap-2">
+          <div className="grid grid-cols-1 md:flex md:items-center md:space-x-2 gap-2">
             <a href="https://foundation.app/@isnhp" target="_blank">
               <div className="inline-flex items-center space-x-2 border-2 bg-white border-gray-300 dark:border-white hover:border-black dark:hover:border-white rounded-xl px-2 py-1 border-dashed transition-all hover:scale-[1.05] cursor-pointer">
                 <div>

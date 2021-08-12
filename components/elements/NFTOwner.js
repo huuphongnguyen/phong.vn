@@ -10,7 +10,7 @@ export default function NFTOwner({ data }) {
       <div className="pb-3">
         <p className="text-black dark:text-white text-sm">
           Real-time syncing with{" "}
-          <a href="" target="_blank" className="font-bold hover:text-blue-500">
+          <a href="https://docs.opensea.io/reference/api-overview" target="_blank" className="font-bold hover:text-blue-500">
             OpenSea API
           </a>
         </p>
