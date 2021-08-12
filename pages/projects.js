@@ -18,7 +18,6 @@ export async function getStaticProps() {
 }
 
 export default function Projects({ results }) {
-  console.log("pr", results);
   return (
     <Container>
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">

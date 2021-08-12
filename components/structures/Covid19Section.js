@@ -1,11 +1,10 @@
 import moment from "moment";
 import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Covid19Section({ dataGlobal, dataVietnam }) {
   const router = useRouter();
-
-  console.log("Global", dataGlobal);
-  console.log("Vietnam", dataVietnam);
+  const { t } = useTranslation("common");
 
   return (
     <div>
@@ -40,7 +39,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
             </div>
             <div className="space-y-1">
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Updated:{" "}
+                {t("covid19-updated")}:{" "}
                 <span className="text-sm font-normal normal-case bg-purple-200 px-1 rounded-full py-[2px]">
                   {moment(Number(dataGlobal.updated))
                     .locale(router.locale === "vi-VN" ? "vi" : "us")
@@ -48,13 +47,13 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Population:{" "}
+                {t("covid19-population")}:{" "}
                 <span className="text-sm font-normal normal-case bg-green-200 px-1 rounded-full py-[2px]">
                   {dataGlobal.population.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Cases:{" "}
+                {t("covid19-cases")}:{" "}
                 <span className="text-sm font-normal normal-case bg-red-200 px-1 rounded-full py-[2px]">
                   {dataGlobal.cases.toLocaleString()}
                 </span>{" "}
@@ -63,7 +62,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Recovered:{" "}
+                {t("covid19-recovered")}:{" "}
                 <span className="text-sm font-normal normal-case bg-blue-200 px-1 rounded-full py-[2px]">
                   {dataGlobal.recovered.toLocaleString()}
                 </span>{" "}
@@ -72,7 +71,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Deaths:{" "}
+                {t("covid19-deaths")}:{" "}
                 <span className="text-sm font-normal normal-case bg-black text-white px-1 rounded-full py-[2px]">
                   {dataGlobal.deaths.toLocaleString()}
                 </span>{" "}
@@ -82,7 +81,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
               </p>
               <div className="pt-2">
                 <p className="text-yellow-500 text-xs uppercase font-bold">
-                  Ratio Per One Million
+                  {t("covid19-ratio")}
                 </p>
                 <div>
                   <p>
@@ -108,7 +107,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
             </div>
             <div className="space-y-1">
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Updated:{" "}
+                {t("covid19-updated")}:{" "}
                 <span className="text-sm font-normal normal-case bg-purple-200 px-1 rounded-full py-[2px]">
                   {moment(Number(dataVietnam.updated))
                     .locale(router.locale === "vi-VN" ? "vi" : "us")
@@ -116,13 +115,13 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Population:{" "}
+                {t("covid19-population")}:{" "}
                 <span className="text-sm font-normal normal-case bg-green-200 px-1 rounded-full py-[2px]">
                   {dataVietnam.population.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Cases:{" "}
+                {t("covid19-cases")}:{" "}
                 <span className="text-sm font-normal normal-case bg-red-200 px-1 rounded-full py-[2px]">
                   {dataVietnam.cases.toLocaleString()}
                 </span>{" "}
@@ -131,7 +130,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Recovered:{" "}
+                {t("covid19-recovered")}:{" "}
                 <span className="text-sm font-normal normal-case bg-blue-200 px-1 rounded-full py-[2px]">
                   {dataVietnam.recovered.toLocaleString()}
                 </span>{" "}
@@ -140,7 +139,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
-                Deaths:{" "}
+                {t("covid19-deaths")}:{" "}
                 <span className="text-sm font-normal normal-case bg-black text-white px-1 rounded-full py-[2px]">
                   {dataVietnam.deaths.toLocaleString()}
                 </span>{" "}
@@ -150,7 +149,7 @@ export default function Covid19Section({ dataGlobal, dataVietnam }) {
               </p>
               <div className="pt-2">
                 <p className="text-yellow-500 text-xs uppercase font-bold">
-                  Ratio Per One Million
+                  {t("covid19-ratio")}
                 </p>
                 <div>
                   <p>

@@ -119,6 +119,7 @@ export default function Home({
         <ProjectsSection />
         <BlogSection />
         {/* <ProductHuntSection data={resultsProductHuntDatas} /> */}
+        <SubPageSection />
         <TimelineSection />
         <BlockchainSection data={resultsOpenSeaAssets} />
         <ConceptsSection />
@@ -126,7 +127,7 @@ export default function Home({
           dataGlobal={resultsCovid19Global}
           dataVietnam={resultsCovid19Vietnam}
         />
-        <SubPageSection />
+
         <StuffSection resultssync={resultsQuotes} />
       </div>
     </Container>
