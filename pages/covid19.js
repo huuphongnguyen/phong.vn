@@ -37,6 +37,7 @@ export async function getStaticProps() {
 export default function Covid19({
   resultsCovid19Global,
   resultsCovid19Vietnam,
+  resultsCovid19VaccineVietNam,
 }) {
   return (
     <div className="w-full flex items-center justify-center mt-12 md:mt-[200px]">
