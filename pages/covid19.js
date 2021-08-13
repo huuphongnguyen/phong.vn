@@ -17,10 +17,19 @@ export async function getStaticProps() {
   );
   const dataFromCovid19VietnamAPI = await apiDataCovid19Vietnam.json();
 
+  const apiUrlCovid19VaccineVietnam =
+    process.env.COVID_19_VACCINE_VIETNAM_API_URL;
+  const request = require("request");
+  const csv = require("csvtojson");
+  const apiDataCovid19VaccineVietnam = await csv().fromStream(
+    request.get(apiUrlCovid19VaccineVietnam)
+  );
+
   return {
     props: {
       resultsCovid19Global: dataFromCovid19GlobalAPI,
       resultsCovid19Vietnam: dataFromCovid19VietnamAPI,
+      resultsCovid19VaccineVietNam: apiDataCovid19VaccineVietnam,
     },
   };
 }
@@ -34,6 +43,7 @@ export default function Covid19({
       <Covid19Section
         dataGlobal={resultsCovid19Global}
         dataVietnam={resultsCovid19Vietnam}
+        dataVaccineVietnam={resultsCovid19VaccineVietNam}
       />
     </div>
   );
