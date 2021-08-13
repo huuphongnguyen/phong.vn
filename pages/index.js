@@ -45,28 +45,28 @@ export async function getStaticProps() {
   );
   const dataFromCovid19VietnamAPI = await apiDataCovid19Vietnam.json();
 
-  // const authLink = setContext((_, { headers }) => {
-  //   const token = process.env.PRODUCTHUNT_TOKEN;
-  //   return {
-  //     headers: {
-  //       ...headers,
-  //       authorization: token ? `Bearer ${token}` : "",
-  //     },
-  //   };
-  // });
+  const authLink = setContext((_, { headers }) => {
+    const token = process.env.PRODUCTHUNT_TOKEN;
+    return {
+      headers: {
+        ...headers,
+        authorization: token ? `Bearer ${token}` : "",
+      },
+    };
+  });
 
-  // const httpLink = createHttpLink({
-  //   uri: process.env.PRODUCTHUNT_API_ENDPOINT,
-  // });
+  const httpLink = createHttpLink({
+    uri: process.env.PRODUCTHUNT_API_ENDPOINT,
+  });
 
-  // const clientPH = new ApolloClient({
-  //   link: authLink.concat(httpLink),
-  //   cache: new InMemoryCache(),
-  // });
+  const clientPH = new ApolloClient({
+    link: authLink.concat(httpLink),
+    cache: new InMemoryCache(),
+  });
 
-  // const { data } = await clientPH.query({
-  //   query: GET_TOP_10_UPVOTES_OF_PHONG,
-  // });
+  const { data } = await clientPH.query({
+    query: GET_TOP_10_UPVOTES_OF_PHONG,
+  });
 
   const apiUrlCovid19VaccineVietnam =
     process.env.COVID_19_VACCINE_VIETNAM_API_URL;
@@ -83,7 +83,7 @@ export async function getStaticProps() {
       resultsCovid19Global: dataFromCovid19GlobalAPI,
       resultsCovid19Vietnam: dataFromCovid19VietnamAPI,
       resultsCovid19VaccineVietNam: apiDataCovid19VaccineVietnam,
-      //resultsProductHuntDatas: data.user.votedPosts.edges,
+      resultsProductHuntDatas: data.user.votedPosts.edges,
     },
     revalidate: 1,
   };
@@ -119,11 +119,11 @@ export default function Home({
         <ProductsSection />
         <ProjectsSection />
         <BlogSection />
-        {/* <ProductHuntSection data={resultsProductHuntDatas} /> */}
+        <ProductHuntSection data={resultsProductHuntDatas} />
         <SubPageSection />
         <TimelineSection />
-        <BlockchainSection data={resultsOpenSeaAssets} />
         <ConceptsSection />
+        <BlockchainSection data={resultsOpenSeaAssets} />
         <Covid19Section
           dataGlobal={resultsCovid19Global}
           dataVietnam={resultsCovid19Vietnam}

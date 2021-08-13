@@ -7,6 +7,9 @@ export const GET_TOP_10_UPVOTES_OF_PHONG = gql`
         edges {
           node {
             name
+            productLinks {
+              url
+            }
             tagline
             thumbnail {
               url
@@ -15,13 +18,6 @@ export const GET_TOP_10_UPVOTES_OF_PHONG = gql`
             isVoted
             slug
             commentsCount
-            topics(first: 2) {
-              edges {
-                node {
-                  name
-                }
-              }
-            }
           }
         }
       }

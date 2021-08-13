@@ -1,3 +1,4 @@
+import { IconArrowBarRight } from "@tabler/icons";
 import { useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 
@@ -7,15 +8,28 @@ export default function NFTOwner({ data }) {
   function CopyCryptoString() {}
   return (
     <div>
-      <div className="pb-3">
-        <p className="text-black dark:text-white text-sm">
-          Real-time syncing with{" "}
-          <a href="https://docs.opensea.io/reference/api-overview" target="_blank" className="font-bold hover:text-blue-500">
-            OpenSea API
-          </a>
-        </p>
+      <div className="pb-3 flex items-center space-x-2 justify-between">
+        <div>
+          <p className="text-black dark:text-white text-sm">
+            Real-time syncing with{" "}
+            <a
+              href="https://docs.opensea.io/reference/api-overview"
+              target="_blank"
+              className="font-bold hover:text-blue-500"
+            >
+              OpenSea API
+            </a>
+          </p>
+        </div>
+        <div className="md:hidden">
+          <IconArrowBarRight
+            size={20}
+            stroke={2}
+            className="text-black dark:text-white"
+          />
+        </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+      <div className="flex space-x-2 scrollbar-hide w-full overflow-x-scroll md:space-x-0 md:grid md:grid-cols-4 md:gap-2">
         {data.map((nft) => (
           <div
             key={nft.id}

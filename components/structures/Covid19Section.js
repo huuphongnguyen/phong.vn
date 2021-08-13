@@ -13,8 +13,6 @@ export default function Covid19Section({
   const getLastElementOfDataVaccineVietnam =
     dataVaccineVietnam[dataVaccineVietnam.length - 1];
 
-  console.log("DATA", dataGlobal);
-
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
