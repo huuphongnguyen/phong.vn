@@ -54,7 +54,7 @@ export default function ProductHuntSection({ data }) {
             {data.map((element, index) => (
               <div
                 key={index}
-                className="p-2 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white rounded-xl flex space-x-2 items-center transition-all"
+                className="p-2 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-black dark:hover:border-white rounded-xl flex space-x-2 items-center"
               >
                 <div>
                   <a
