@@ -45,16 +45,6 @@ export async function getStaticProps() {
   );
   const dataFromCovid19VietnamAPI = await apiDataCovid19Vietnam.json();
 
-  // const apiUrlCovid19VaccineVietnam =
-  //   process.env.COVID_19_VACCINE_VIETNAM_API_URL;
-  // const apiOptionCovid19VaccineVietnam = { method: "GET" };
-  // const apiDataCovid19VaccineVietnam = await fetch(
-  //   apiUrlCovid19VaccineVietnam,
-  //   apiOptionCovid19VaccineVietnam
-  // );
-  // const dataFromCovid19VaccineVietnamAPI =
-  //   await apiDataCovid19VaccineVietnam.json();
-
   // const authLink = setContext((_, { headers }) => {
   //   const token = process.env.PRODUCTHUNT_TOKEN;
   //   return {
@@ -78,14 +68,24 @@ export async function getStaticProps() {
   //   query: GET_TOP_10_UPVOTES_OF_PHONG,
   // });
 
+  const apiUrlCovid19VaccineVietnam =
+    process.env.COVID_19_VACCINE_VIETNAM_API_URL;
+  const request = require("request");
+  const csv = require("csvtojson");
+  const apiDataCovid19VaccineVietnam = await csv().fromStream(
+    request.get(apiUrlCovid19VaccineVietnam)
+  );
+
   return {
     props: {
       resultsQuotes: responseQuotes.results,
       resultsOpenSeaAssets: dataFromOpenSeaAPI.assets,
       resultsCovid19Global: dataFromCovid19GlobalAPI,
       resultsCovid19Vietnam: dataFromCovid19VietnamAPI,
+      resultsCovid19VaccineVietNam: apiDataCovid19VaccineVietnam,
       //resultsProductHuntDatas: data.user.votedPosts.edges,
     },
+    revalidate: 1,
   };
 }
 
@@ -94,6 +94,7 @@ export default function Home({
   resultsOpenSeaAssets,
   resultsCovid19Global,
   resultsCovid19Vietnam,
+  resultsCovid19VaccineVietNam,
   resultsProductHuntDatas,
 }) {
   const seotitle = `PHONG.VN - Phong's personal website`;
@@ -126,6 +127,7 @@ export default function Home({
         <Covid19Section
           dataGlobal={resultsCovid19Global}
           dataVietnam={resultsCovid19Vietnam}
+          dataVaccineVietnam={resultsCovid19VaccineVietNam}
         />
 
         <StuffSection resultssync={resultsQuotes} />
