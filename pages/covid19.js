@@ -40,7 +40,7 @@ export default function Covid19({
   resultsCovid19VaccineVietNam,
 }) {
   return (
-    <div className="w-full flex items-center justify-center mt-12 md:mt-[200px]">
+    <div className="w-full flex items-center justify-center mt-6 md:mt-[200px] px-4 md:px-0 py-4 md:py-0">
       <Covid19Section
         dataGlobal={resultsCovid19Global}
         dataVietnam={resultsCovid19Vietnam}
