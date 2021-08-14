@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 import NextNProgress from "nextjs-progressbar";
+import ProgressBar from "../components/elements/ProcessScrollBar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) {
           );"
         options={{ easing: "ease", speed: 500 }}
       />
+      <ProgressBar height="6" bgcolor="#000" duration="0" />
       <Component {...pageProps} />
     </ThemeProvider>
   );
