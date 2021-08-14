@@ -129,8 +129,8 @@ export default function one_hundred_simple_truths_blog() {
             </ul>
           </div>
         </div>
-        <EndPostSection telegramid="21">
-          <TelegramComments datatelegramdiscussion="phongchannel/21" />
+        <EndPostSection telegramid="18">
+          <TelegramComments datatelegramdiscussion="phongchannel/18" />
         </EndPostSection>
       </div>
     </Container>
