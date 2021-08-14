@@ -1,5 +1,4 @@
 import { IconCurrencyEthereum } from "@tabler/icons";
-
 import useTranslation from "next-translate/useTranslation";
 import NFTOwner from "../elements/NFTOwner";
 

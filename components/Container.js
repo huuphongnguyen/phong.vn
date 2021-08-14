@@ -1,4 +1,4 @@
-import { MoreHorizontal } from "akar-icons";
+import { IconDots } from "@tabler/icons";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -10,7 +10,7 @@ export default function Container({ children }) {
        
         {children}
         <div className="items-start mx-auto w-full max-w-3xl space-y-1 flex justify-center">
-          <MoreHorizontal className="text-black dark:text-white" />
+          <IconDots size={20} stroke={2} className="text-black dark:text-white" />
         </div>
         <Footer />
       </main>
