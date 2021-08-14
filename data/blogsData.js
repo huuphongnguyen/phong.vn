@@ -1,5 +1,14 @@
 export const blogsData = [
   [
+    "100 sự thật đơn giản",
+    "/icons/100-su-that-don-gian-feature-icon.svg",
+    ["#vi-blog"],
+    [""],
+    "2021-08-14",
+    "https://phong.vn/blog/100",
+    "100",
+  ],
+  [
     "Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế nào?",
     "/icons/minh-da-ung-tuyen-thanh-cong-zalo-product-management-trainee-nhu-the-nao-feature-icon.svg",
     ["#vi-blog"],

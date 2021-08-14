@@ -18,7 +18,7 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
   const seodescrip = `Case Study: Quá trình tái cấu trúc – xây dựng thương hiệu cho Anh Xuyến , trong bài viết này mình sẽ nói về phần nào đó quá trình mình đã gần như làm lại mọi thứ tại đây. Đây chỉ là case study của mình, nó có thể đúng hoặc sai, nó cũng được hình thành từ kinh nghiệm và những gì mình hiểu.`;
   const seourl = `https://phong.vn/blog/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen`;
   const seopreviewimg =
-    " /static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-img.png";
+    "/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-img.png";
   const headerslug =
     "case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen";
   const headerpublish = "2019-06-11";
