@@ -58,7 +58,7 @@ export default function Covid19Section({
                 {t("covid19-updated")}:{" "}
                 <span className="text-sm font-normal normal-case bg-purple-200 px-1 rounded-full py-[2px]">
                   {moment(Number(dataGlobal.updated))
-                    .locale(router.locale === "vi-VN" ? "vi" : "us")
+                    .locale(router.locale === "vi-VN" ? "vi" : "en")
                     .format("MMMM Do YYYY, h:mm:ss a")}
                 </span>
               </p>

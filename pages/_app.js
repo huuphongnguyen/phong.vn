@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           );"
         options={{ easing: "ease", speed: 500 }}
       />
-      <ProgressBar height="6" bgcolor="#000" duration="0" />
+      <ProgressBar height="3" bgcolor="#000" duration="0" />
       <Component {...pageProps} />
     </ThemeProvider>
   );
