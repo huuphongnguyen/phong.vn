@@ -20,6 +20,7 @@ $ cd phong.vn
 $ npm install
 $ yarn dev
 ```
+Note: Can not run without value of keys in ```.env.local.sample```
 
 ## Built Using
 
@@ -28,8 +29,21 @@ $ yarn dev
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Dropbox](https://dropbox.com)
 - [Notion](https://notion.com)
+- [Cloudflare](https://cloudflare.com)
 - [PlanetScale](https://www.planetscale.com)
+
+## APIs & Data
+- [Notion API](https://developers.notion.com/)
+- [Spotify API](https://developers.notion.com/)
+- [OpenSea API](https://docs.opensea.io/reference/api-overview)
+- [ProductHunt API](https://api.producthunt.com/v2/docs)
+- [PlanetScale API](https://www.planetscale.com/)
+- [Novel Covid19 API](https://disease.sh/)
+- Archillect Unofficial API
+- Twitter Hashflags Data
+
 
 ### Inspiration
 
 - Inspired by the website structure of [leerob.io](https://leerob.io/)
+- Inspired by the website ideas of [wongmjane.com](https://wongmjane.com/)

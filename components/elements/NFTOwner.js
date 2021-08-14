@@ -21,7 +21,8 @@ export default function NFTOwner({ data }) {
             </a>
           </p>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-2">
+          <p className="text-black dark:text-white text-xs">Scroll</p>
           <IconArrowBarRight
             size={20}
             stroke={2}

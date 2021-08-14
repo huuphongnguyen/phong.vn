@@ -39,7 +39,7 @@ export default function ProductHuntSection({ data }) {
               <p className="text-black dark:text-white text-sm text-left md:text-right">
                 Real-time syncing with{" "}
                 <a
-                  href=""
+                  href="https://api.producthunt.com/v2/docs"
                   target="_blank"
                   className="font-bold rainbow_text_hover"
                 >
@@ -92,7 +92,7 @@ export default function ProductHuntSection({ data }) {
                         />
                       </div>
                       <p className="text-xs font-bold text-purple-500">
-                        {element.node.commentsCount} comments
+                        {element.node.commentsCount}
                       </p>
                     </div>
                   </div>
