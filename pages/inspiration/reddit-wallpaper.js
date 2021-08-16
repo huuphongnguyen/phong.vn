@@ -15,7 +15,7 @@ export async function getStaticProps() {
   var dataFromRedditWallpaperAPI = [];
   data.data.children.map((item) => {
     try {
-      const parent_img = item.data.preview.images[0].resolutions[3].url;
+      const parent_img = item?.data.preview.images[0].resolutions[3].url;
       dataFromRedditWallpaperAPI.push({
         id: item.data.id,
         title: item.data.title,
