@@ -34,7 +34,7 @@ export async function getStaticProps() {
     props: {
       resultsRedditWallpaper: dataFromRedditWallpaperAPI,
     },
-    revalidate: 1,
+    revalidate: 60,
   };
 }
 

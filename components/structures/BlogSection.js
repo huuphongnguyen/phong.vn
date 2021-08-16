@@ -19,23 +19,7 @@ export default function BlogSection() {
           Blog
         </h1>
       </div>
-      <div className="p-2 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-xl my-2">
-        <p className="text-sm text-black dark:text-white">
-          <span className="text-white dark:text-black px-1 font-bold text-xs mr-1 bg-black dark:bg-white">
-            NEW
-          </span>
-          Phong vừa sử dụng{" "}
-          <a
-            href="https://www.planetscale.com/"
-            target="_blank"
-            className="font-bold"
-          >
-            PlanetScale
-          </a>{" "}
-          (một dịch vụ database mới) để xây dựng "lượt xem".
-        </p>
-      </div>
-      <div>
+      <div className="my-3">
         <RevueForm />
       </div>
       <div className="flex items-start space-x-4 md:space-x-6 pl-3">

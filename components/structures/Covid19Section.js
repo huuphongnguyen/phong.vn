@@ -1,6 +1,7 @@
 import moment from "moment";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
+import NextLink from "next/link";
 
 export default function Covid19Section({
   dataGlobal,
@@ -22,6 +23,13 @@ export default function Covid19Section({
         <h1 className="text-black dark:text-white text-base uppercase font-sourcecodepro">
           Covid19
         </h1>
+        <div>
+          <NextLink href="/covid19">
+            <a className="border-2 border-black dark:border-white text-black dark:text-white text-sm uppercase font-bold px-1 bg-white dark:bg-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
+              Open
+            </a>
+          </NextLink>
+        </div>
       </div>
       <div className="px-4 pt-2 space-y-2">
         <div>
@@ -56,7 +64,7 @@ export default function Covid19Section({
             <div className="space-y-1">
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-updated")}:{" "}
-                <span className="text-sm font-normal normal-case bg-purple-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-purple-200 text-black px-1 rounded-full py-[2px]">
                   {moment(Number(dataGlobal.updated))
                     .locale(router.locale === "vi-VN" ? "vi" : "en")
                     .format("MMMM Do YYYY, h:mm:ss a")}
@@ -64,40 +72,40 @@ export default function Covid19Section({
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-population")}:{" "}
-                <span className="text-sm font-normal normal-case bg-green-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-green-200 text-black px-1 rounded-full py-[2px]">
                   {dataGlobal.population.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-cases")}:{" "}
-                <span className="text-sm font-normal normal-case bg-red-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-red-200 text-black px-1 rounded-full py-[2px]">
                   {dataGlobal.cases.toLocaleString()}
                 </span>{" "}
-                <span className="text-sm font-normal normal-case bg-gray-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-gray-200 text-black px-1 rounded-full py-[2px]">
                   +{dataGlobal.todayCases.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-recovered")}:{" "}
-                <span className="text-sm font-normal normal-case bg-blue-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-blue-200 text-black px-1 rounded-full py-[2px]">
                   {dataGlobal.recovered.toLocaleString()}
                 </span>{" "}
-                <span className="text-sm font-normal normal-case bg-gray-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-gray-200 text-black px-1 rounded-full py-[2px]">
                   +{dataGlobal.todayRecovered.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-critical")}:{" "}
-                <span className="text-sm font-normal normal-case bg-yellow-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-yellow-200 text-black px-1 rounded-full py-[2px]">
                   {dataGlobal.critical.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-deaths")}:{" "}
-                <span className="text-sm font-normal normal-case bg-black text-white px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-black dark:bg-white text-white dark:text-black px-1 rounded-full py-[2px]">
                   {dataGlobal.deaths.toLocaleString()}
                 </span>{" "}
-                <span className="text-sm font-normal normal-case bg-gray-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-gray-200 text-black px-1 rounded-full py-[2px]">
                   +{dataGlobal.todayDeaths.toLocaleString()}
                 </span>
               </p>
@@ -110,7 +118,7 @@ export default function Covid19Section({
                     <span className="text-sm font-normal normal-case bg-red-200 text-black px-1 rounded-full py-[2px]">
                       {dataGlobal.casesPerOneMillion.toLocaleString()}
                     </span>{" "}
-                    <span className="text-sm font-normal normal-case bg-black text-white px-1 rounded-full py-[2px]">
+                    <span className="text-sm font-normal normal-case bg-black dark:bg-white text-white dark:text-black px-1 rounded-full py-[2px]">
                       {dataGlobal.deathsPerOneMillion.toLocaleString()}
                     </span>{" "}
                   </p>
@@ -118,7 +126,7 @@ export default function Covid19Section({
               </div>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-affected-countries")}:{" "}
-                <span className="text-sm font-normal normal-case bg-pink-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-pink-200 text-black px-1 rounded-full py-[2px]">
                   {dataGlobal.affectedCountries.toLocaleString()}
                 </span>
               </p>
@@ -135,7 +143,7 @@ export default function Covid19Section({
             <div className="space-y-1">
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-updated")}:{" "}
-                <span className="text-sm font-normal normal-case bg-purple-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-purple-200 text-black px-1 rounded-full py-[2px]">
                   {moment(Number(dataVietnam.updated))
                     .locale(router.locale === "vi-VN" ? "vi" : "us")
                     .format("MMMM Do YYYY, h:mm:ss a")}
@@ -143,34 +151,34 @@ export default function Covid19Section({
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-population")}:{" "}
-                <span className="text-sm font-normal normal-case bg-green-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-green-200 text-black px-1 rounded-full py-[2px]">
                   {dataVietnam.population.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-cases")}:{" "}
-                <span className="text-sm font-normal normal-case bg-red-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-red-200 text-black px-1 rounded-full py-[2px]">
                   {dataVietnam.cases.toLocaleString()}
                 </span>{" "}
-                <span className="text-sm font-normal normal-case bg-gray-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-gray-200 text-black px-1 rounded-full py-[2px]">
                   +{dataVietnam.todayCases.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-recovered")}:{" "}
-                <span className="text-sm font-normal normal-case bg-blue-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-blue-200 text-black px-1 rounded-full py-[2px]">
                   {dataVietnam.recovered.toLocaleString()}
                 </span>{" "}
-                <span className="text-sm font-normal normal-case bg-gray-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-gray-200 text-black px-1 rounded-full py-[2px]">
                   +{dataVietnam.todayRecovered.toLocaleString()}
                 </span>
               </p>
               <p className="text-black dark:text-white text-xs uppercase font-bold">
                 {t("covid19-deaths")}:{" "}
-                <span className="text-sm font-normal normal-case bg-black text-white px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-black dark:bg-white text-white dark:text-black px-1 rounded-full py-[2px]">
                   {dataVietnam.deaths.toLocaleString()}
                 </span>{" "}
-                <span className="text-sm font-normal normal-case bg-gray-200 px-1 rounded-full py-[2px]">
+                <span className="text-sm font-normal normal-case bg-gray-200 text-black px-1 rounded-full py-[2px]">
                   +{dataVietnam.todayDeaths.toLocaleString()}
                 </span>
               </p>
@@ -183,7 +191,7 @@ export default function Covid19Section({
                     <span className="text-sm font-normal normal-case bg-red-200 text-black px-1 rounded-full py-[2px]">
                       {dataVietnam.casesPerOneMillion.toLocaleString()}
                     </span>{" "}
-                    <span className="text-sm font-normal normal-case bg-black text-white px-1 rounded-full py-[2px]">
+                    <span className="text-sm font-normal normal-case bg-black dark:bg-white text-white dark:text-black px-1 rounded-full py-[2px]">
                       {dataVietnam.deathsPerOneMillion.toLocaleString()}
                     </span>{" "}
                   </p>

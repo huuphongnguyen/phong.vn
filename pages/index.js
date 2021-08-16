@@ -85,7 +85,7 @@ export async function getStaticProps() {
       resultsCovid19VaccineVietNam: apiDataCovid19VaccineVietnam,
       resultsProductHuntDatas: data.user.votedPosts.edges,
     },
-    revalidate: 1,
+    revalidate: 60,
   };
 }
 
