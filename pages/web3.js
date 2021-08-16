@@ -4,7 +4,7 @@ import { Web3Storage, getFilesFromPath } from "web3.storage";
 export default function Web3() {
   async function storeFiles() {
     const client = new Web3Storage({
-      token: WEB3_STORAGE_API_KEY,
+      token: process.env.WEB3_STORAGE_API_KEY,
     });
     const files = await getFilesFromPath(
       "/static/covid19-trancking-feature-img.png"
