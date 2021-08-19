@@ -33,6 +33,7 @@ export async function getStaticProps() {
       resultsCovid19Vietnam: dataFromCovid19VietnamAPI,
       resultsCovid19VaccineVietNam: apiDataCovid19VaccineVietnam,
     },
+    revalidate: 60,
   };
 }
 
