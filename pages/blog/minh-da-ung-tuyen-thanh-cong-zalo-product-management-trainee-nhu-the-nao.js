@@ -486,6 +486,12 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
         <EndPostSection telegramid="17">
           <TelegramComments datatelegramdiscussion="phongchannel/17" />
         </EndPostSection>
+        <script
+          async
+          src="https://telegram.org/js/telegram-widget.js?15"
+          data-telegram-discussion="durov/126"
+          data-comments-limit="5"
+        ></script>
       </div>
     </Container>
   );

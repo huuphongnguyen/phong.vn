@@ -77,8 +77,6 @@ class MyDocument extends Document {
           />
 
           <script async src="https://cdn.splitbee.io/sb.js" />
-
-          <link rel="canonical" href="https://phong.vn" />
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
