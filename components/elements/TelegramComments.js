@@ -9,9 +9,8 @@ export default class TelegramComments extends Component {
     let scriptEl = document.createElement("script");
     scriptEl.setAttribute(
       "src",
-      "https://telegram.org/js/telegram-widget.js?14"
+      "https://telegram.org/js/telegram-widget.js?15"
     );
-    scriptEl.setAttribute("crossorigin", "anonymous");
     scriptEl.setAttribute("async", true);
     scriptEl.setAttribute(
       "data-telegram-discussion",
