@@ -10,7 +10,6 @@ import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import BlogHeader from "../../components/structures/BlogHeader";
 
-
 export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Management_trainee_nhu_the_nao() {
   const seotitle = `Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế nào?`;
   const seodescrip = `Mình đã ứng tuyển thành công Zalo Product Management Trainee như thế nào? Trong bài viết này mình sẽ ghi lại toàn bộ quá trình mình đã ứng tuyển và vượt qua những vòng thử thách để được nhận vào chương trình Zalo Product Management Trainee 2021.`;
