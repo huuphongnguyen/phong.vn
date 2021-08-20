@@ -23,7 +23,7 @@ export default function RevueForm() {
         >
           <div className="md:flex md:items-center md:space-x-2">
             <div className="inline-flex items-center space-x-2 p-2 bg-gray-100 dark:bg-gray-800 rounded-xl my-2">
-              <div class="revue-form-group w-full">
+              <div className="revue-form-group w-full">
                 <input
                   className="revue-form-field px-2 rounded-md w-auto md:w-[300px]"
                   placeholder={t("subscribe-placeholder")}

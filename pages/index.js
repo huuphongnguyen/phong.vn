@@ -45,6 +45,7 @@ export async function getStaticProps() {
   );
   const dataFromCovid19VietnamAPI = await apiDataCovid19Vietnam.json();
 
+  // PRODUCT HUNT API FETCHING
   const authLink = setContext((_, { headers }) => {
     const token = process.env.PRODUCTHUNT_TOKEN;
     return {
@@ -68,6 +69,7 @@ export async function getStaticProps() {
     query: GET_TOP_10_UPVOTES_OF_PHONG,
   });
 
+  // COVID19 VACCINE DATA FETCHING
   const apiUrlCovid19VaccineVietnam =
     process.env.COVID_19_VACCINE_VIETNAM_API_URL;
   const request = require("request");

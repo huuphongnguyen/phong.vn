@@ -6,10 +6,10 @@ import BulletList from "../../components/elements/block/BulletList";
 import Quote from "../../components/elements/block/Quote";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
-import TelegramComments from "../../components/elements/TelegramComments";
 import EndPostSection from "../../components/structures/EndPostSection";
 import TableOfContents from "../../components/elements/block/TableOfContents";
 import BlogHeader from "../../components/structures/BlogHeader";
+import Comments from "../../components/Comments";
 
 export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
   const seotitle = `Mình đã mua tên miền .ETH của ENS Domain như thế nào?`;
@@ -672,7 +672,7 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
           <Paragraph>Hãy thử và trải nghiệm tương lai.</Paragraph>
         </div>
         <EndPostSection telegramid="14">
-          <TelegramComments datatelegramdiscussion="phongchannel/14" />
+          <Comments telegramdiscussurl="phongchannel/14" />
         </EndPostSection>
       </div>
     </Container>

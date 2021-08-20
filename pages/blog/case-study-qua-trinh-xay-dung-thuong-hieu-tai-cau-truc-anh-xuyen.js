@@ -9,9 +9,9 @@ import BulletList from "../../components/elements/block/BulletList";
 import TableOfContents from "../../components/elements/block/TableOfContents";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
-import TelegramComments from "../../components/elements/TelegramComments";
 import EndPostSection from "../../components/structures/EndPostSection";
 import BlogHeader from "../../components/structures/BlogHeader";
+import Comments from "../../components/Comments";
 
 export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_truc_Anh_Xuyen() {
   const seotitle = `Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến`;
@@ -1129,7 +1129,7 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
           </Paragraph>
         </div>
         <EndPostSection telegramid="13">
-          <TelegramComments datatelegramdiscussion="phongchannel/13" />
+          <Comments telegramdiscussurl="phongchannel/13" />
         </EndPostSection>
       </div>
     </Container>

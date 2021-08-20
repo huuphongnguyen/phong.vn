@@ -5,7 +5,7 @@ import Heading2 from "../../components/elements/block/Heading2";
 import Heading3 from "../../components/elements/block/Heading3";
 import CallOut from "../../components/elements/block/CallOut";
 import EndPostSection from "../../components/structures/EndPostSection";
-import TelegramComments from "../../components/elements/TelegramComments";
+import Comments from "../../components/Comments";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import BlogHeader from "../../components/structures/BlogHeader";
@@ -61,6 +61,7 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
           featureimggif={headerfeatureimggif}
           authors={headerauthors}
         />
+
         <div className="text-black dark:text-white space-y-3">
           <Paragraph>
             Bài viết này được viết ra với mục đích giúp mình lưu trữ lại điều
@@ -484,14 +485,8 @@ export default function Blog_minh_da_ung_tuyen_thanh_cong_Zalo_Product_Managemen
           </Paragraph>
         </div>
         <EndPostSection telegramid="17">
-          <TelegramComments datatelegramdiscussion="phongchannel/17" />
+          <Comments telegramdiscussurl="phongchannel/17" />
         </EndPostSection>
-        <script
-          async
-          src="https://telegram.org/js/telegram-widget.js?15"
-          data-telegram-discussion="durov/126"
-          data-comments-limit="5"
-        ></script>
       </div>
     </Container>
   );

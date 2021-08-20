@@ -7,8 +7,8 @@ import Heading2 from "../../components/elements/block/Heading2";
 import Heading3 from "../../components/elements/block/Heading3";
 import BulletList from "../../components/elements/block/BulletList";
 import EndPostSection from "../../components/structures/EndPostSection";
-import TelegramComments from "../../components/elements/TelegramComments";
 import BlogHeader from "../../components/structures/BlogHeader";
+import Comments from "../../components/Comments";
 
 export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
   const seotitle = `Notion là gì? Ứng dụng quan trọng nhất của mình`;
@@ -627,7 +627,7 @@ export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
           </Paragraph>
         </div>
         <EndPostSection telegramid="16">
-          <TelegramComments datatelegramdiscussion="phongchannel/16" />
+          <Comments telegramdiscussurl="phongchannel/16" />
         </EndPostSection>
       </div>
     </Container>

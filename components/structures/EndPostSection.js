@@ -1,10 +1,13 @@
 import { Air, Door, Send } from "akar-icons";
 import NextLink from "next/link";
+import RevueForm from "../elements/RevueForm";
 
 export default function EndPostSection({ children, telegramid }) {
   return (
     <div className="w-full space-y-6">
-      <div>{children}</div>
+      <div className="p-2 md:p-4 border-2 border-black dark:border-white border-dashed">
+        {children}
+      </div>
       <div className="w-full flex items-center justify-center space-x-2">
         <NextLink href="/">
           <a>
@@ -43,6 +46,9 @@ export default function EndPostSection({ children, telegramid }) {
             />
           </div>
         </a>
+      </div>
+      <div className="my-3">
+        <RevueForm />
       </div>
     </div>
   );

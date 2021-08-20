@@ -7,7 +7,7 @@ import { IconBrandTwitter, IconWorld } from "@tabler/icons";
 import CopyToClipboard from "react-copy-to-clipboard";
 import toast from "react-hot-toast";
 import EndPostSection from "../../components/structures/EndPostSection";
-import TelegramComments from "../../components/elements/TelegramComments";
+import Comments from "../../components/Comments";
 
 export default function one_hundred_simple_truths_blog() {
   const seotitle = `100 sự thật đơn giản`;
@@ -113,7 +113,12 @@ export default function one_hundred_simple_truths_blog() {
               </a>
             </div>
           </div>
-          <Paragraph>Và dưới đây là những điều đó. Một lưu ý là phần dịch của mình có thể hơi thô bởi mình không giỏi dịch lắm, mình thấy câu tiếng Anh vẫn đầy đủ nghĩa nhất rồi. Ngoài ra bạn có thể bấm vào từng câu để copy cả câu nhanh.</Paragraph>
+          <Paragraph>
+            Và dưới đây là những điều đó. Một lưu ý là phần dịch của mình có thể
+            hơi thô bởi mình không giỏi dịch lắm, mình thấy câu tiếng Anh vẫn
+            đầy đủ nghĩa nhất rồi. Ngoài ra bạn có thể bấm vào từng câu để copy
+            cả câu nhanh.
+          </Paragraph>
           <div className="pl-9">
             <ul className="list-decimal text-black dark:text-white text-xl font-bold">
               {OneHunredSimpleTruths.map((truth, index) => (
@@ -130,7 +135,7 @@ export default function one_hundred_simple_truths_blog() {
           </div>
         </div>
         <EndPostSection telegramid="18">
-          <TelegramComments datatelegramdiscussion="phongchannel/18" />
+          <Comments telegramdiscussurl="phongchannel/18" />
         </EndPostSection>
       </div>
     </Container>

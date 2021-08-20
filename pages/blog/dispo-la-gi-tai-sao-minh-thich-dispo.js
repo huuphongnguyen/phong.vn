@@ -1,10 +1,10 @@
 import Container from "../../components/Container";
 import ExternalLink from "../../components/elements/ExternalLink";
-import TelegramComments from "../../components/elements/TelegramComments";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import EndPostSection from "../../components/structures/EndPostSection";
 import BlogHeader from "../../components/structures/BlogHeader";
+import Comments from "../../components/Comments";
 
 export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
   const seotitle = `Dispo là gì? Tại sao mình thích Dispo?`;
@@ -302,7 +302,7 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
           </div>
         </div>
         <EndPostSection telegramid="5">
-          <TelegramComments datatelegramdiscussion="phongchannel/5" />
+          <Comments telegramdiscussurl="phongchannel/5" />
         </EndPostSection>
       </div>
     </Container>

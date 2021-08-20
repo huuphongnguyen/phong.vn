@@ -64,13 +64,13 @@ module.exports = nextTranslate({
 // https://securityheaders.com
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com telegram.org;
-  child-src *.youtube.com *.google.com *.twitter.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com t.me telegram.org *.splitbee.io *.cloudflareinsights.com *.googletagmanager.com *.googleapis.com *.gstatic.com;
+  child-src *.youtube.com *.google.com *.twitter.com t.me telegram.org;
   style-src 'self' 'unsafe-inline' *.googleapis.com;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
-  font-src 'self';
+  font-src 'self' *.googletagmanager.com *.googleapis.com *.gstatic.com;
 `;
 
 const securityHeaders = [
