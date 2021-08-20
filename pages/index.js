@@ -131,7 +131,6 @@ export default function Home({
           dataVietnam={resultsCovid19Vietnam}
           dataVaccineVietnam={resultsCovid19VaccineVietNam}
         />
-
         <StuffSection resultssync={resultsQuotes} />
       </div>
     </Container>

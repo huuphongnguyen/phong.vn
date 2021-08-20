@@ -18,7 +18,7 @@ export default function TimelineSection() {
         </h1>
       </div>
       <div className="px-4 pt-2 space-y-2">
-        <div className="w-full">
+        <div className="w-full flex items-center space-x-2">
           <div className="inline-flex items-center space-x-2">
             <div className="-ml-0 md:-ml-1 mr-0 md:mr-2">
               <IconInfinity
@@ -37,6 +37,20 @@ export default function TimelineSection() {
                 My timeline
               </p>
             </div>
+          </div>
+          <div>
+            <a
+              className="mx-2"
+              href="https://changelog.phong.vn"
+              target="_blank"
+            >
+              <div className="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex items-center space-x-2">
+                <img src="/icons/polywork.svg" className="w-7 h-7" />
+                <p className="text-black dark:text-whtie font-bold pointer-events-none">
+                  My Changelog
+                </p>
+              </div>
+            </a>
           </div>
         </div>
         <div className={`${showTimeline ? "" : "hidden"}`}>
