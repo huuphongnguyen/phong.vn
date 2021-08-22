@@ -91,14 +91,6 @@ export default function Domains() {
               <Hodl />
             </DomainsElement>
             <DomainsElement
-              domain="twitter.vn"
-              registeredday="20190809"
-              visiturl="https://twitter.vn"
-              qrcodeimg="/static/domains-twitter-vn-qr-code.png"
-            >
-              <Hodl />
-            </DomainsElement>
-            <DomainsElement
               domain="gus9.com"
               registeredday="20191018"
               visiturl="https://gus9.com"

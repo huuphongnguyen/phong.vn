@@ -138,65 +138,7 @@ export default function StuffSection({ resultssync }) {
           </div>
         </div>
         <div className="flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-2 gap-4 pt-2">
-          <div>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <Chess className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
-                  My domains I am chilling with
-                </h2>
-              </div>
-              <div>
-                <NextLink href="/domains">
-                  <a>
-                    <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
-                      <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
-                        see more
-                      </p>
-                      <ArrowUpRight
-                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
-                        size={18}
-                      />
-                    </div>
-                  </a>
-                </NextLink>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <KeyCap className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
-                  My tools I am using it to create
-                </h2>
-              </div>
-              <div>
-                <div className="flex items-center space-x-1">
-                  <a href="/tools">
-                    <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
-                      <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
-                        explore
-                      </p>
-                      <ArrowUpRight
-                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
-                        size={18}
-                      />
-                    </div>
-                  </a>
-
-                  <div className="inline-flex">
-                    <p className="text-black dark:text-white px-2 text-xs uppercase font-bold border-2 border-black">
-                      Syncing with Notion API
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
+          <div className="space-y-4">
             <div className="space-y-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="text-black dark:text-white" />
@@ -219,7 +161,7 @@ export default function StuffSection({ resultssync }) {
               </a>
               <a href="https://www.snapchat.com/add/isnhp" target="_blank">
                 <div className="items-center space-x-2 mt-2 px-2 py-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
-                  <div>
+                  <div className="dark:bg-white rounded-full">
                     <img
                       src="/icons/snapchat.svg"
                       className="w-[40px] h-auto"
@@ -263,38 +205,106 @@ export default function StuffSection({ resultssync }) {
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
-          <div>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <Radish className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
-                  Need some quotes?
-                </h2>
-              </div>
-              <div>
-                <QuotesView resultssync={resultssync} />
-              </div>
+              <a href="https://slowly.app/" target="_blank">
+                <div className="items-center space-x-2 mt-2 px-2 py-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
+                  <div className="bg-white rounded-full">
+                    <img src="/icons/slowly.svg" className="w-[40px] h-auto" />
+                  </div>
+                  <p className="text-black dark:text-white font-sourcecodepro text-sm uppercase">
+                    Slowly together ?
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
           <div className="space-y-4">
-            <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
-              Connecting with
-            </h2>
             <div>
-              <a
-                href="https://integrately.com?ref=or8jcf&utm_campaign=Website Referral"
-                target="_blank"
-              >
-                <img
-                  src="https://integrately-images.s3-us-west-2.amazonaws.com/we-automate-with-integrately-light.svg"
-                  width="120"
-                  alt="Integrately - Integration platform"
-                  title="Click to learn more"
-                />
-              </a>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2">
+                  <Chess className="text-black dark:text-white" />
+                  <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
+                    My domains I am chilling with
+                  </h2>
+                </div>
+                <div>
+                  <NextLink href="/domains">
+                    <a>
+                      <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
+                        <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
+                          see more
+                        </p>
+                        <ArrowUpRight
+                          className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                          size={18}
+                        />
+                      </div>
+                    </a>
+                  </NextLink>
+                </div>
+              </div>
             </div>
+            <div>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2">
+                  <KeyCap className="text-black dark:text-white" />
+                  <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
+                    My tools I am using it to create
+                  </h2>
+                </div>
+                <div>
+                  <div className="flex items-center space-x-1">
+                    <a href="/tools">
+                      <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
+                        <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
+                          explore
+                        </p>
+                        <ArrowUpRight
+                          className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                          size={18}
+                        />
+                      </div>
+                    </a>
+
+                    <div className="inline-flex">
+                      <p className="text-black dark:text-white px-2 text-xs uppercase font-bold border-2 border-black">
+                        Syncing with Notion API
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>{" "}
+            <div>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 mb-4">
+                  <Radish className="text-black dark:text-white" />
+                  <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
+                    Need some quotes?
+                  </h2>
+                </div>
+                <div>
+                  <QuotesView resultssync={resultssync} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-black dark:text-white font-sourcecodepro text-sm font-bold">
+            Connecting with
+          </h2>
+          <div>
+            <a
+              href="https://integrately.com?ref=or8jcf&utm_campaign=Website Referral"
+              target="_blank"
+            >
+              <img
+                src="https://integrately-images.s3-us-west-2.amazonaws.com/we-automate-with-integrately-light.svg"
+                width="120"
+                alt="Integrately - Integration platform"
+                title="Click to learn more"
+              />
+            </a>
           </div>
         </div>
       </div>
