@@ -1,9 +1,9 @@
 export default function ChangeCoin() {
   return (
     <div>
-      <div class="ccoin">
-        <div class="ccoin__front"></div>
-        <div class="ccoin__edge">
+      <div className="ccoin">
+        <div className="ccoin__front"></div>
+        <div className="ccoin__edge">
           <div></div>
           <div></div>
           <div></div>
@@ -85,8 +85,8 @@ export default function ChangeCoin() {
           <div></div>
           <div></div>
         </div>
-        <div class="ccoin__back"></div>
-        <div class="ccoin__shadow"></div>
+        <div className="ccoin__back"></div>
+        <div className="ccoin__shadow"></div>
       </div>
     </div>
   );

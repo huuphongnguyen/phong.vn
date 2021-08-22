@@ -2,7 +2,11 @@ import { IconCurrencyEthereum } from "@tabler/icons";
 import useTranslation from "next-translate/useTranslation";
 import NFTOwner from "../elements/NFTOwner";
 
-export default function BlockchainSection({ data }) {
+export default function BlockchainSection({
+  data,
+  dataPhongNFTVN,
+  dataStampsByHumans,
+}) {
   const { t } = useTranslation("common");
 
   return (
@@ -38,9 +42,7 @@ export default function BlockchainSection({ data }) {
             </div>
           </div>
         </div>
-        <div>
-          <NFTOwner data={data} />
-        </div>
+
         <div className="space-y-2">
           <div className="grid grid-cols-1 md:flex md:items-center md:space-x-2 gap-2">
             <a href="https://foundation.app/@isnhp" target="_blank">
@@ -78,6 +80,21 @@ export default function BlockchainSection({ data }) {
               {t("blockchain-foundation-text")}
             </p>
           </div>
+        </div>
+        <div>
+          <p className="text-black dark:text-white text-sm">
+            Real-time syncing with{" "}
+            <a
+              href="https://docs.opensea.io/reference/api-overview"
+              target="_blank"
+              className="font-bold hover:text-blue-500"
+            >
+              OpenSea API
+            </a>
+          </p>
+        </div>
+        <div>
+          <NFTOwner data={data} />
         </div>
       </div>
     </div>

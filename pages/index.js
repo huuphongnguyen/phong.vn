@@ -29,6 +29,24 @@ export async function getStaticProps() {
   const apiDataOpenSea = await fetch(apiUrlOpenSea, apiOptionOpenSea);
   const dataFromOpenSeaAPI = await apiDataOpenSea.json();
 
+  const apiUrlPhongNFTVNOpenSea = process.env.OPENSEA_API_URL_PHONG_NFTVN;
+  const apiPhongNFTVNOptionOpenSea = { method: "GET" };
+  const apiDataPhongNFTVNOpenSea = await fetch(
+    apiUrlPhongNFTVNOpenSea,
+    apiPhongNFTVNOptionOpenSea
+  );
+  const dataFromPhongNFTVNOpenSeaAPI = await apiDataPhongNFTVNOpenSea.json();
+
+  const apiUrlStampsByHumansOpenSea =
+    process.env.OPENSEA_API_URL_STAMPS_BYHUMANS;
+  const apiStampsByHumansOptionOpenSea = { method: "GET" };
+  const apiDataStampsByHumansOpenSea = await fetch(
+    apiUrlStampsByHumansOpenSea,
+    apiStampsByHumansOptionOpenSea
+  );
+  const dataFromStampsByHumansOpenSeaAPI =
+    await apiDataStampsByHumansOpenSea.json();
+
   const apiUrlCovid19Global = process.env.COVID_19_GLOBAL_API_URL;
   const apiOptionCovid19Global = { method: "GET" };
   const apiDataCovid19Global = await fetch(
@@ -82,6 +100,9 @@ export async function getStaticProps() {
     props: {
       resultsQuotes: responseQuotes.results,
       resultsOpenSeaAssets: dataFromOpenSeaAPI.assets,
+      resultsPhongNFTVNOpenSeaAssets: dataFromPhongNFTVNOpenSeaAPI.assets,
+      resultsStampsByHumansOpenSeaAssets:
+        dataFromStampsByHumansOpenSeaAPI.assets,
       resultsCovid19Global: dataFromCovid19GlobalAPI,
       resultsCovid19Vietnam: dataFromCovid19VietnamAPI,
       resultsCovid19VaccineVietNam: apiDataCovid19VaccineVietnam,
@@ -94,6 +115,8 @@ export async function getStaticProps() {
 export default function Home({
   resultsQuotes,
   resultsOpenSeaAssets,
+  resultsPhongNFTVNOpenSeaAssets,
+  resultsStampsByHumansOpenSeaAssets,
   resultsCovid19Global,
   resultsCovid19Vietnam,
   resultsCovid19VaccineVietNam,
@@ -125,7 +148,11 @@ export default function Home({
         <SubPageSection />
         <TimelineSection />
         <ConceptsSection />
-        <BlockchainSection data={resultsOpenSeaAssets} />
+        <BlockchainSection
+          data={resultsOpenSeaAssets}
+          dataPhongNFTVN={resultsPhongNFTVNOpenSeaAssets}
+          dataStampsByHumans={resultsStampsByHumansOpenSeaAssets}
+        />
         <Covid19Section
           dataGlobal={resultsCovid19Global}
           dataVietnam={resultsCovid19Vietnam}

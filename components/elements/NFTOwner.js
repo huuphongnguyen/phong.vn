@@ -9,18 +9,6 @@ export default function NFTOwner({ data }) {
   return (
     <div>
       <div className="pb-3 flex items-center space-x-2 justify-between">
-        <div>
-          <p className="text-black dark:text-white text-sm">
-            Real-time syncing with{" "}
-            <a
-              href="https://docs.opensea.io/reference/api-overview"
-              target="_blank"
-              className="font-bold hover:text-blue-500"
-            >
-              OpenSea API
-            </a>
-          </p>
-        </div>
         <div className="md:hidden flex items-center space-x-2">
           <p className="text-black dark:text-white text-xs">Scroll</p>
           <IconArrowBarRight
