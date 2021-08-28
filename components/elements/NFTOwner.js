@@ -18,7 +18,7 @@ export default function NFTOwner({ data }) {
           />
         </div>
       </div>
-      <div className="flex space-x-2 scrollbar-hide w-full overflow-x-scroll md:space-x-0 md:grid md:grid-cols-4 md:gap-2">
+      <div className="flex space-x-2 scrollbar-hide w-full overflow-x-scroll">
         {data.map((nft) => (
           <div
             key={nft.id}

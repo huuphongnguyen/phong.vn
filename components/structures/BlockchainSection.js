@@ -95,7 +95,38 @@ export default function BlockchainSection({
               </a>
             </p>
           </div>
-          <NFTOwner data={data} />
+          {/* <div>
+            <div className="flex items-center space-x-1">
+              <img
+                src="https://lh3.googleusercontent.com/0Id9QQJrsoBrGxV1NkxUCY3YNbw62mnxClbX4YZO2ltXL7W09mdXB1J9rrtWFp2gjrLC03Yjz1YVF1cFBU3MsW8dnV--69FEfeWcKg=s130"
+                className="w-10 h-10 rounded-xl"
+              />
+              <a
+                href="https://opensea.io/collection/phong-collection"
+                target="_blank"
+                className="text-black dark:text-white font-bold"
+              >
+                <p>phong.NFT.vn</p>
+              </a>
+            </div>
+            <NFTOwner data={dataPhongNFTVN} />
+          </div> */}
+          <div>
+            <div className="flex items-center space-x-1">
+              <img
+                src="https://lh3.googleusercontent.com/bDdNqa1yo2pxHR5RNcHVtpME13MR57UFf8U_qzifRqBY_jz1pz_bfDRpx4h-qGz8fMx-rFnBnNlpMrw3ll7ySFThu3vcBNuopKZOvw=s130"
+                className="w-20 h-20 rounded-xl"
+              />
+              <a
+                href="https://opensea.io/collection/stamps-byhumans"
+                target="_blank"
+                className="text-black dark:text-white font-bold"
+              >
+                <p>Stamps.byHumans.org</p>
+              </a>
+            </div>
+            <NFTOwner data={dataStampsByHumans} />
+          </div>
         </div>
       </div>
     </div>
